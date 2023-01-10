@@ -1,8 +1,16 @@
 import Head from 'next/head'
 import Categories from '../components/Categories'
+import Collection from '../components/Collection'
+import DailyEssentials from '../components/DailyEssentials'
+import FeaturedCatogories from '../components/FeaturedCatogories'
 import FindYourConformHome from '../components/FindYourConformHome'
+import Footer from '../components/Footer'
+import FooterInfo from '../components/FooterInfo'
 import HeroSection from '../components/HeroSection'
+import HolidayDestination from '../components/HolidayDestination'
+import LatestBlogs from '../components/LatestBlogs'
 import Line from '../components/Line'
+import Newsletter from '../components/Newsletter'
 import Products from '../components/Products'
 import Properties from '../components/Properties'
 import TopBar from '../components/TopBar'
@@ -46,7 +54,23 @@ export default function Home() {
       {/* products */}
       <Products />
       {/* findyourconformhome */}
-      <FindYourConformHome/>
+      <FindYourConformHome />
+      {/* daily essentials */}
+      <DailyEssentials />
+      {/* collection */}
+      <Collection />
+      {/* FeaturedCatogories */}
+      <FeaturedCatogories />
+      {/* holidayDestination */}
+      <HolidayDestination />
+      {/* Latest Blogs */}
+      <LatestBlogs />
+      {/* newsletter */}
+      <Newsletter />
+      {/* footerinfo */}
+      <FooterInfo />
+      {/* Footer */}
+      <Footer />
     </>
   )
 }

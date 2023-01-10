@@ -10,7 +10,7 @@ const TopBar = () => {
                 </div>
                 <div className='flex items-center  w-full ml-[36px]'>
                     <div className='flex items-center w-full  border-r-0 border border-[#C9C9C9;] justify-between pr-[16px]  py-[10px] pl-[17px]'>
-                        <input type="text" placeholder='Search for anything ' className='placeholder:text-[12px] leading-[18px]  font-normal italic placeholder:text-[#000]/50' />
+                        <input type="text" placeholder='Search for anything ' className='placeholder:text-[12px] leading-[18px]  font-normal italic placeholder:text-[#000]/50 outline-none' />
                     </div>
                     <div className='flex items-center pl-[31px] pt-[11px] pb-[9px] pr-[24px] gap-[4px] search'>
                         <p className='text-[12px]  leading-[18px] font-medium text-[#FFFFFF]'>Search</p>
