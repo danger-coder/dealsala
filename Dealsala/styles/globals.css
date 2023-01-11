@@ -97,7 +97,37 @@ body {
   background: linear-gradient(100.04deg, #01C3CC 9.05%, #5A4FE4 56.08%, #7D2AE7 84%), #3B0E71;
 }
 
+.ant-select {
+  border: none;
+  
+}
 
+.ant-select-selector {
+  border: none !important;
+  border: 1px solid #C9C9C9 !important;
+  border-radius: 0 !important;
+  height: 40px !important;
+  border-right: 0 !important;
+  color: #505056 !important;
+
+}
+
+.ant-select-arrow {
+ 
+  /* background: red!important; */
+  margin-bottom: -15px!important;
+}
+.ant-select .ant-select-arrow{
+  margin-top: -3px !important;
+  width: 11px!important;
+  height: 6px!important;
+}
+.ant-select-selection-item{
+  color: #505056 !important;
+  font-size: 12px!important;
+  line-height: 18px !important;
+  margin-top: 8px!important;
+}
 
 @media (min-width:768px) {
   .slick-slider {
@@ -126,6 +156,14 @@ body {
 @media (min-width:1500px) {
   .slick-slider {
     width: 1140px;
+    position: relative;
+  }
+
+}
+
+@media (min-width:1536px) {
+  .slick-slider {
+    width: 1090px;
     position: relative;
   }
 
