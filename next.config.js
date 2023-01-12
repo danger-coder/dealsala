@@ -2,14 +2,14 @@
 const webpack = require("webpack");
 const nextConfig = {
   reactStrictMode: true,
-  plugins: [
-    // other plugins,
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    }),
-  ],
+  // plugins: [
+  //   // other plugins,
+  //   new webpack.ProvidePlugin({
+  //     $: 'jquery',
+  //     jQuery: 'jquery',
+  //     'window.jQuery': 'jquery'
+  //   }),
+  // ],
 }
 
 module.exports = nextConfig
