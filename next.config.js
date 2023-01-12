@@ -2,6 +2,9 @@
 const webpack = require("webpack");
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   // plugins: [
   //   // other plugins,
   //   new webpack.ProvidePlugin({
