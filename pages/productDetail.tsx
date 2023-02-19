@@ -1,5 +1,6 @@
 import React from 'react'
-import ReactStars from "react-rating-stars-component";
+// import ReactStars from "react-rating-stars-component";
+import { Rate } from 'antd';
 import { Tabs } from 'antd';
 import type { TabsProps } from 'antd';
 import { Progress } from 'antd';
@@ -36,7 +37,7 @@ const items: TabsProps['items'] = [
 const ProductDetailPage = () => {
   return (
     <div>
-      <TopBar/>
+      <TopBar />
       <div className='border-t-[1px] border-[#EDEDED] border-b-[1px] mt-[22px] mb-[25px]'>
         <div className='container mx-auto '>
           <div className='flex items-center gap-[54px] pt-[15px] pb-[16px]   '>
@@ -68,12 +69,13 @@ const ProductDetailPage = () => {
           <div className='pt-[10px]'>
             <p className='text-[#24263F] text-[18px] leading-[28px] font-normal max-w-[540px]'>Mobile with earbuds and smart watch v2.0, foldable tablet convertible</p>
             <div className='flex items-center gap-[9px]'>
-              <ReactStars
+              {/* <ReactStars
                 count={5}
                 onChange={ratingChanged}
                 size={18}
                 activeColor="#ffd700"
-              />
+              /> */}
+              <Rate />
               <p className='text-[#2D2D2D] text-[12px] leading-[18px] font-normal'>(120 Reviews)</p>
             </div>
             <h1 className='text-[#3B0E71] text-[28px] leading-[42px] font-light mt-[2px]'>Rs 98599</h1>
@@ -157,12 +159,15 @@ const ProductDetailPage = () => {
                   </div>
                 </div>
 
-                <div>  <ReactStars
+                <div>
+                  {/* <ReactStars
                   count={5}
                   onChange={ratingChanged}
                   size={18}
                   activeColor="#ffd700"
-                /></div>
+                /> */}
+                  <Rate />
+                </div>
               </div>
               <p className='text-[#2D2D2D] text-[13px] leading-[19.5px] font-normal max-w-[694px] mt-[26px]'>It was indeed very good and fantastic to dine here and stay. The atmosphere electrifying. Prices was also very reasonable and service was awesome.
               </p>
@@ -177,12 +182,16 @@ const ProductDetailPage = () => {
                   </div>
                 </div>
 
-                <div>  <ReactStars
+                <div>
+                  {/* <ReactStars
                   count={5}
                   onChange={ratingChanged}
                   size={18}
                   activeColor="#ffd700"
-                /></div>
+                /> */}
+                  <Rate />
+
+                </div>
               </div>
               <p className='text-[#2D2D2D] text-[13px] leading-[19.5px] font-normal max-w-[694px] mt-[26px]'>It was indeed very good and fantastic to dine here and stay. The atmosphere electrifying. Prices was also very reasonable and service was awesome.
               </p>
@@ -197,12 +206,15 @@ const ProductDetailPage = () => {
                   </div>
                 </div>
 
-                <div>  <ReactStars
+                <div>
+                  {/* <ReactStars
                   count={5}
                   onChange={ratingChanged}
                   size={18}
                   activeColor="#ffd700"
-                /></div>
+                /> */}
+                  <Rate />
+                </div>
               </div>
               <p className='text-[#2D2D2D] text-[13px] leading-[19.5px] font-normal max-w-[694px] mt-[26px]'>It was indeed very good and fantastic to dine here and stay. The atmosphere electrifying. Prices was also very reasonable and service was awesome.
               </p>

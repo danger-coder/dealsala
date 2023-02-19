@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import SearchBanner from '../components/SearchBanner'
 import Link from 'next/link';
 import { Select } from 'antd';
+import { Rate } from 'antd';
 import { FaThLarge, FaThList } from "react-icons/fa"
-import ReactStars from "react-rating-stars-component";
+// import ReactStars from "react-rating-stars-component";
 import RelatedSearch from '../components/RelatedSearch';
 import TopBar from '../components/TopBar';
 
@@ -43,7 +44,7 @@ const Search = () => {
 
     return (
         <div className=' pb-[0px]'>
-            <TopBar/>
+            <TopBar />
             <SearchBanner />
 
             <div className='container mx-auto'>
@@ -210,12 +211,13 @@ const Search = () => {
                                 <div>
                                     <p className='text-[#3B0E71] text-[23.833px] font-medium leading-[36px]'>$ 15,000</p>
                                     <p className='text-[#24263F] text-[16px] leading-[24px] font-medium mt-[10px]'>Mobile with earbuds and smart watch v2.0, foldable tablet convertible</p>
-                                    <ReactStars
+                                    {/* <ReactStars
                                         count={5}
                                         onChange={ratingChanged}
                                         size={18}
                                         activeColor="#ffd700"
-                                    />
+                                    /> */}
+                                    <Rate />
                                     <p className='text-[#24263F] text-[13px] leading-[20px] font-light mt-[0px]'>3 BHK Apartment, Andheri West, Mumbai</p>
                                     <div className='flex items-center justify-between mt-[18.01px]'>
                                         <div className={grid ? "w-full h-[38px] bg-[#F9F9F9] flex items-center 2xl:gap-[33px] xl:gap-[14px] 2xl:pl-[30.07px] xl:pl-[15px]" : "w-[393.93px] h-[38px] bg-[#F9F9F9] flex items-center gap-[33px] pl-[30.07px]"}>
@@ -256,12 +258,14 @@ const Search = () => {
                                 <div>
                                     <p className='text-[#3B0E71] text-[23.833px] font-medium leading-[36px]'>$ 15,000</p>
                                     <p className='text-[#24263F] text-[16px] leading-[24px] font-medium mt-[10px]'>Mobile with earbuds and smart watch v2.0, foldable tablet convertible</p>
-                                    <ReactStars
+                                    {/* <ReactStars
                                         count={5}
                                         onChange={ratingChanged}
                                         size={18}
                                         activeColor="#ffd700"
-                                    />
+                                    /> */}
+
+                                    <Rate />
                                     <p className='text-[#24263F] text-[13px] leading-[20px] font-light mt-[0px]'>3 BHK Apartment, Andheri West, Mumbai</p>
                                     <div className='flex items-center justify-between mt-[18.01px]'>
                                         <div className={grid ? "w-full h-[38px] bg-[#F9F9F9] flex items-center 2xl:gap-[33px] xl:gap-[14px] 2xl:pl-[30.07px] xl:pl-[15px]" : "w-[393.93px] h-[38px] bg-[#F9F9F9] flex items-center gap-[33px] pl-[30.07px]"}>
@@ -300,12 +304,14 @@ const Search = () => {
                                 <div>
                                     <p className='text-[#3B0E71] text-[23.833px] font-medium leading-[36px]'>$ 15,000</p>
                                     <p className='text-[#24263F] text-[16px] leading-[24px] font-medium mt-[10px]'>Mobile with earbuds and smart watch v2.0, foldable tablet convertible</p>
-                                    <ReactStars
+                                    {/* <ReactStars
                                         count={5}
                                         onChange={ratingChanged}
                                         size={18}
                                         activeColor="#ffd700"
-                                    />
+                                    /> */}
+
+                                    <Rate />
                                     <p className='text-[#24263F] text-[13px] leading-[20px] font-light mt-[0px]'>3 BHK Apartment, Andheri West, Mumbai</p>
                                     <div className='flex items-center justify-between mt-[18.01px]'>
                                         <div className={grid ? "w-full h-[38px] bg-[#F9F9F9] flex items-center 2xl:gap-[33px] xl:gap-[14px] 2xl:pl-[30.07px] xl:pl-[15px]" : "w-[393.93px] h-[38px] bg-[#F9F9F9] flex items-center gap-[33px] pl-[30.07px]"}>
@@ -344,12 +350,13 @@ const Search = () => {
                                 <div>
                                     <p className='text-[#3B0E71] text-[23.833px] font-medium leading-[36px]'>$ 15,000</p>
                                     <p className='text-[#24263F] text-[16px] leading-[24px] font-medium mt-[10px]'>Mobile with earbuds and smart watch v2.0, foldable tablet convertible</p>
-                                    <ReactStars
+                                    {/* <ReactStars
                                         count={5}
                                         onChange={ratingChanged}
                                         size={18}
                                         activeColor="#ffd700"
-                                    />
+                                    /> */}
+                                    <Rate />
                                     <p className='text-[#24263F] text-[13px] leading-[20px] font-light mt-[0px]'>3 BHK Apartment, Andheri West, Mumbai</p>
                                     <div className='flex items-center justify-between mt-[18.01px]'>
                                         <div className={grid ? "w-full h-[38px] bg-[#F9F9F9] flex items-center 2xl:gap-[33px] xl:gap-[14px] 2xl:pl-[30.07px] xl:pl-[15px]" : "w-[393.93px] h-[38px] bg-[#F9F9F9] flex items-center gap-[33px] pl-[30.07px]"}>
@@ -388,12 +395,13 @@ const Search = () => {
                                 <div>
                                     <p className='text-[#3B0E71] text-[23.833px] font-medium leading-[36px]'>$ 15,000</p>
                                     <p className='text-[#24263F] text-[16px] leading-[24px] font-medium mt-[10px]'>Mobile with earbuds and smart watch v2.0, foldable tablet convertible</p>
-                                    <ReactStars
+                                    {/* <ReactStars
                                         count={5}
                                         onChange={ratingChanged}
                                         size={18}
                                         activeColor="#ffd700"
-                                    />
+                                    /> */}
+                                    <Rate />
                                     <p className='text-[#24263F] text-[13px] leading-[20px] font-light mt-[0px]'>3 BHK Apartment, Andheri West, Mumbai</p>
                                     <div className='flex items-center justify-between mt-[18.01px]'>
                                         <div className={grid ? "w-full h-[38px] bg-[#F9F9F9] flex items-center 2xl:gap-[33px] xl:gap-[14px] 2xl:pl-[30.07px] xl:pl-[15px]" : "w-[393.93px] h-[38px] bg-[#F9F9F9] flex items-center gap-[33px] pl-[30.07px]"}>
@@ -432,12 +440,13 @@ const Search = () => {
                                 <div>
                                     <p className='text-[#3B0E71] text-[23.833px] font-medium leading-[36px]'>$ 15,000</p>
                                     <p className='text-[#24263F] text-[16px] leading-[24px] font-medium mt-[10px]'>Mobile with earbuds and smart watch v2.0, foldable tablet convertible</p>
-                                    <ReactStars
+                                    {/* <ReactStars
                                         count={5}
                                         onChange={ratingChanged}
                                         size={18}
                                         activeColor="#ffd700"
-                                    />
+                                    /> */}
+                                    <Rate />
                                     <p className='text-[#24263F] text-[13px] leading-[20px] font-light mt-[0px]'>3 BHK Apartment, Andheri West, Mumbai</p>
                                     <div className='flex items-center justify-between mt-[18.01px]'>
                                         <div className={grid ? "w-full h-[38px] bg-[#F9F9F9] flex items-center 2xl:gap-[33px] xl:gap-[14px] 2xl:pl-[30.07px] xl:pl-[15px]" : "w-[393.93px] h-[38px] bg-[#F9F9F9] flex items-center gap-[33px] pl-[30.07px]"}>
