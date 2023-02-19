@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const LatestBlogs = () => {
     return (
         <div className='bg-[#F9F9F9] '>
-            <div className='container mx-auto'>
+            <div className='container mx-auto hidden md:block'>
                 <h2 className='text-[22px] leading-[33px] font-medium pt-[37px] text-[#0E1133] tracking-[0.02em]'>
                     Latest Blogs
                 </h2>

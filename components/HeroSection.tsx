@@ -24,12 +24,12 @@ const HeroSection = () => {
     return (
         <>
 
-            <div className='flex w-full container mx-auto overflow-hidden gap-[24px] mt-[15px] md:flex md:flex-col  lg:flex-row '>
+            <div className='flex  w-full container mx-auto overflow-hidden gap-[24px] mt-[15px] md:flex md:flex-col  lg:flex-row '>
                 <div className='basis-[65%] md:basis-[100%]'>
-                    <Slider {...settings} className=" h-[393px]">
+                    <Slider {...settings} className=" md:h-[393px] h-[150px] landing">
                         <div className='relative'>
-                            <img src="/../assets/slide.jpg" className='w-[1190px]  h-[393px] object-fill' alt="" />
-                            <img src="/../assets/plane.png" alt="" className='absolute top-[48px] left-[30%]' />
+                            <img src="/../assets/slide.jpg" className='md:w-[1190px]  md:h-[393px] w-full h-[150px] object-fill' alt="" />
+                            <img src="/../assets/plane.png" alt="" className='absolute md:top-[48px] md:left-[30%] top-[5%] left-[20%] w-[60%] md:w-auto' />
                             <div
                                 // initial={{
                                 //     opacity: 0
@@ -38,11 +38,11 @@ const HeroSection = () => {
                                 // animate={{ opacity: 1 }}
                                 // transition={{ duration: 1.5 }}
                                 // viewport={{ once: true }}
-                                className='absolute top-[53.08px] left-[67.07px]'>
+                                className='absolute md:top-[53.08px] top-[25.38px] left-[16.91px] md:left-[67.07px]'>
                                 <h2
 
 
-                                    className='text-[22.2px] leading-[33.3px] text-white font-normal'>Best Vacation Deals</h2>
+                                    className='md:text-[22.2px] text-[13px] md:leading-[33.3px] leading-[19.5px] text-white font-normal'>Best Vacation Deals</h2>
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -51,7 +51,7 @@ const HeroSection = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 1.2 }}
 
-                                    className='text-[45.73px] leading-[68.6px] font-bold text-white'>30% off</motion.p>
+                                    className='md:text-[45.73px] text-[30.96px] md:leading-[68.6px] leading-[46.44px] font-bold text-white'>30% off</motion.p>
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -60,7 +60,7 @@ const HeroSection = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 1 }}
 
-                                    className='text-[22.2px] leading-[33.3px] text-white font-normal'>on Flight Booking</motion.p>
+                                    className='md:text-[22.2px] text-[13px] md:leading-[33.3px] leading-[19.5px] text-white font-normal'>on Flight Booking</motion.p>
                             </div>
                             <motion.div
                                 initial={{
@@ -70,8 +70,8 @@ const HeroSection = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1 }}
 
-                                className='absolute bottom-[46px] right-[29.43px] flex items-center gap-[6px] cursor-pointer'>
-                                <h2 className='text-[16px] leading-[18.75px] text-white'>BOOK NOW</h2>
+                                className='absolute md:bottom-[46px] bottom-[30px] right-[29.43px] flex items-center gap-[6px] cursor-pointer'>
+                                <h2 className='md:text-[16px] text-[13px] md:leading-[18.75px] leading-[15.23px] text-white'>BOOK NOW</h2>
                                 <img src="/../assets/arrow_right.png" alt="" />
                             </motion.div>
                             <motion.p
@@ -85,8 +85,8 @@ const HeroSection = () => {
                                 className='absolute bottom-[9px] text-[10px] leading-[15px] font-normal text-white right-[29.43px]'>*conditions applied</motion.p>
                         </div>
                         <div className='relative'>
-                            <img src="/../assets/slide.jpg" className='w-[1190px]  h-[393px] object-fill' alt="" />
-                            <img src="/../assets/plane.png" alt="" className='absolute top-[48px] left-[30%]' />
+                            <img src="/../assets/slide.jpg" className='md:w-[1190px]  md:h-[393px] w-full h-[150px] object-fill' alt="" />
+                            <img src="/../assets/plane.png" alt="" className='absolute md:top-[48px] md:left-[30%] top-[5%] left-[20%] w-[60%] md:w-auto' />
                             <div
                                 // initial={{
                                 //     opacity: 0,
@@ -95,10 +95,10 @@ const HeroSection = () => {
                                 // whileInView={{ opacity: 1, }}
                                 // transition={{ duration: 1.5 }}
 
-                                className='absolute top-[53.08px] left-[67.07px]'>
+                                className='absolute md:top-[53.08px] top-[25.38px] left-[16.91px] md:left-[67.07px]'>
                                 <h2
 
-                                    className='text-[22.2px] leading-[33.3px] text-white font-normal'>Best Vacation Deals</h2>
+                                    className='md:text-[22.2px] text-[13px] md:leading-[33.3px] leading-[19.5px] text-white font-normal'>Best Vacation Deals</h2>
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -106,7 +106,7 @@ const HeroSection = () => {
                                     }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 1.2 }}
-                                    className='text-[45.73px] leading-[68.6px] font-bold text-white'>30% off</motion.p>
+                                    className='md:text-[45.73px] text-[30.96px] md:leading-[68.6px] leading-[46.44px] font-bold text-white'>30% off</motion.p>
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -114,7 +114,7 @@ const HeroSection = () => {
                                     }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 1 }}
-                                    className='text-[22.2px] leading-[33.3px] text-white font-normal'>on Flight Booking</motion.p>
+                                    className='md:text-[22.2px] text-[13px] md:leading-[33.3px] leading-[19.5px] text-white font-normal'>on Flight Booking</motion.p>
                             </div>
                             <motion.div
                                 initial={{
@@ -125,8 +125,8 @@ const HeroSection = () => {
                                 transition={{ duration: 1 }}
 
 
-                                className='absolute bottom-[46px] right-[29.43px] flex items-center gap-[6px] cursor-pointer'>
-                                <h2 className='text-[16px] leading-[18.75px] text-white'>BOOK NOW</h2>
+                                className='absolute md:bottom-[46px] bottom-[30px] right-[29.43px] flex items-center gap-[6px] cursor-pointer'>
+                                <h2 className='md:text-[16px] text-[13px] md:leading-[18.75px] leading-[15.23px] text-white'>BOOK NOW</h2>
                                 <img src="/../assets/arrow_right.png" alt="" />
                             </motion.div>
                             <motion.p
@@ -140,8 +140,8 @@ const HeroSection = () => {
                                 className='absolute bottom-[9px] text-[10px] leading-[15px] font-normal text-white right-[29.43px]'>*conditions applied</motion.p>
                         </div>
                         <div className='relative'>
-                            <img src="/../assets/slide.jpg" className='w-[1190px]  h-[393px] object-fill' alt="" />
-                            <img src="/../assets/plane.png" alt="" className='absolute top-[48px] left-[30%]' />
+                            <img src="/../assets/slide.jpg" className='md:w-[1190px]  md:h-[393px] w-full h-[150px] object-fill' alt="" />
+                            <img src="/../assets/plane.png" alt="" className='absolute md:top-[48px] md:left-[30%] top-[5%] left-[20%] w-[60%] md:w-auto' />
                             <div
                                 // initial={{
                                 //     opacity: 0
@@ -149,8 +149,8 @@ const HeroSection = () => {
                                 // whileInView={{ opacity: 1 }}
                                 // transition={{ duration: 1.5 }}
 
-                                className='absolute top-[53.08px] left-[67.07px]'>
-                                <h2 className='text-[22.2px] leading-[33.3px] text-white font-normal'>Best Vacation Deals</h2>
+                                className='absolute md:top-[53.08px] top-[25.38px] left-[16.91px] md:left-[67.07px]'>
+                                <h2 className='md:text-[22.2px] text-[13px] md:leading-[33.3px] leading-[19.5px] text-white font-normal'>Best Vacation Deals</h2>
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -158,7 +158,7 @@ const HeroSection = () => {
                                     }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 1.2 }}
-                                    className='text-[45.73px] leading-[68.6px] font-bold text-white'>30% off</motion.p>
+                                    className='md:text-[45.73px] text-[30.96px] md:leading-[68.6px] leading-[46.44px] font-bold text-white'>30% off</motion.p>
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -166,7 +166,7 @@ const HeroSection = () => {
                                     }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 1 }}
-                                    className='text-[22.2px] leading-[33.3px] text-white font-normal'>on Flight Booking</motion.p>
+                                    className='md:text-[22.2px] text-[13px] md:leading-[33.3px] leading-[19.5px] text-white font-normal'>on Flight Booking</motion.p>
                             </div>
                             <motion.div
                                 initial={{
@@ -176,8 +176,8 @@ const HeroSection = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1 }}
 
-                                className='absolute bottom-[46px] right-[29.43px] flex items-center gap-[6px] cursor-pointer'>
-                                <h2 className='text-[16px] leading-[18.75px] text-white'>BOOK NOW</h2>
+                                className='absolute md:bottom-[46px] bottom-[30px] right-[29.43px] flex items-center gap-[6px] cursor-pointer'>
+                                <h2 className='md:text-[16px] text-[13px] md:leading-[18.75px] leading-[15.23px] text-white'>BOOK NOW</h2>
                                 <img src="/../assets/arrow_right.png" alt="" />
                             </motion.div>
                             <motion.p
@@ -194,7 +194,7 @@ const HeroSection = () => {
                     </Slider>
 
                 </div>
-                <div className='basis-[35%]'>
+                <div className='basis-[35%] hidden md:block'>
                     <motion.div
                         initial={{
                             opacity: 0,

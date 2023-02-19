@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 const Collection = () => {
     return (
-        <div className='mt-[138px] container mx-auto pb-[65px] '>
+        <div className='mt-[138px] container mx-auto pb-[65px] hidden md:block'>
             <div className='grid grid-cols-3 gap-[31.33px]'>
                 <motion.div
                     initial={{

@@ -3,11 +3,15 @@ import { motion } from "framer-motion"
 const HolidayDestination = () => {
     return (
         <div>
-            <div className='container mx-auto pt-[60px] pb-[60px] '>
-                <h2
-
-                    className='text-[22px] leading-[33px] font-medium'>Holiday Destinations</h2>
-                <div className='grid grid-cols-3 gap-[24px] mt-[31px]'>
+            <div className='container mx-auto md:pt-[60px] pt-[40px] md:pb-[60px] pb-[120px] px-[12px] '>
+                {/* <h2 className='text-[22px] leading-[33px] font-medium'>Holiday Destinations</h2> */}
+                <div className='flex items-center justify-between'>
+                    <h2 className='md:text-[22px] text-[14px] leading-[19.5px] md:leading-[33px] font-medium tracking-[0.02em] text-[#0E1133] font-poppins'> Holiday Destinations</h2>
+                    <svg className='md:hidden' width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.9373 6.99996C6.93527 7.14905 6.87759 7.292 6.77558 7.40074L1.15058 13.0257C1.04129 13.1154 0.902537 13.1613 0.76132 13.1543C0.620103 13.1474 0.486515 13.0882 0.386539 12.9882C0.286563 12.8882 0.227348 12.7547 0.220413 12.6134C0.213477 12.4722 0.259316 12.3335 0.349014 12.2242L5.58026 6.99996L0.349014 1.77574C0.259316 1.66645 0.213477 1.5277 0.220412 1.38649C0.227348 1.24527 0.286563 1.11168 0.386539 1.0117C0.486514 0.911728 0.620103 0.852512 0.76132 0.845577C0.902537 0.838641 1.04128 0.884481 1.15058 0.974179L6.77558 6.59918C6.87759 6.70792 6.93527 6.85087 6.9373 6.99996Z" fill="black" />
+                    </svg>
+                </div>
+                <div className='grid md:grid-cols-3 grid-cols-1 gap-[24px] mt-[31px]'>
                     <div className='flex flex-col gap-[20px] group'>
                         <motion.div
                             initial={{
