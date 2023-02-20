@@ -51,9 +51,11 @@ const Categories = () => {
                 </div>
 
             </div>
-            <div className='container mx-auto pt-[17.2px] md:hidden'>
-                <p className='text-center text-[#F65128] text-[12px] leading-[18px] font-normal cursor-pointer tracking-[0.02em] font-poppins'>ALL CATEGORIES</p>
-            </div>
+            <Link href="/categories">
+                <div className='container mx-auto pt-[17.2px] md:hidden'>
+                    <p className='text-center text-[#F65128] text-[12px] leading-[18px] font-normal cursor-pointer tracking-[0.02em] font-poppins'>ALL CATEGORIES</p>
+                </div>
+            </Link>
         </>
     )
 }

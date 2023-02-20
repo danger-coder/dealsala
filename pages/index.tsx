@@ -13,6 +13,7 @@ import Line from '../components/Line'
 import Newsletter from '../components/Newsletter'
 import Products from '../components/Products'
 import Properties from '../components/Properties'
+import RelatedSearch from '../components/RelatedSearch'
 import TopBar from '../components/TopBar'
 // import RelatedSearch from '../components/RelatedSearch'
 // import TopBar from '../components/TopBar'
@@ -68,7 +69,7 @@ export default function Home() {
         {/* Latest Blogs */}
         <LatestBlogs />
         {/* related search */}
-        {/* <RelatedSearch /> */}
+        <RelatedSearch />
         {/* newsletter */}
         {/* <Newsletter /> */}
         {/* footerinfo */}

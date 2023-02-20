@@ -6,6 +6,7 @@ type Props = {}
 const Nav = (props: Props) => {
     const router = useRouter()
     const [home, setHome] = useState(false)
+    const [chat, setChat] = useState(false)
     const [service, setService] = useState(false)
     const [complain, setComplain] = useState(false)
     const [profile, setProfile] = useState(false)
@@ -17,8 +18,14 @@ const Nav = (props: Props) => {
         setService(false)
         setComplain(false)
         setProfile(false)
-        router.push("/smart")
+        setChat(false)
+        router.push("/")
         const color = localStorage.setItem('footerColor', "red");
+    }
+    const ChatClick = () => {
+        setChat(!chat)
+        setHome(false)
+        router.push("/chat")
     }
     const serviceClick = () => {
         setService(!service)
@@ -48,21 +55,21 @@ const Nav = (props: Props) => {
 
                 <div className='flex items-center justify-center flex-col py-[16px]' onClick={homeclick}>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.600098 6.5L9.0001 1L17.4001 6.5M15.5334 10V16.4C15.5334 16.5591 15.4744 16.7117 15.3694 16.8243C15.2644 16.9368 15.122 17 14.9734 17H3.02676C2.87824 17 2.73581 16.9368 2.63078 16.8243C2.52576 16.7117 2.46676 16.5591 2.46676 16.4V10" stroke="#2D2D2D" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M0.600098 6.5L9.0001 1L17.4001 6.5M15.5334 10V16.4C15.5334 16.5591 15.4744 16.7117 15.3694 16.8243C15.2644 16.9368 15.122 17 14.9734 17H3.02676C2.87824 17 2.73581 16.9368 2.63078 16.8243C2.52576 16.7117 2.46676 16.5591 2.46676 16.4V10" stroke="#2D2D2D" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <p className={home ? `mt-[5px] text-[#2591B2] homes text-[12px] leading-[14.06px] font-medium ` : "mt-[5px] text-[#000000] text-[12px] leading-[14.06px] font-normal"}>Home</p>
                 </div>
 
-                <div className='flex items-center justify-center flex-col py-[16px]' onClick={homeclick}>
+                <div className='flex items-center justify-center flex-col py-[16px]' onClick={ChatClick}>
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.99304 9.01052V9.02051M5.99831 9.01052V9.02051M13.9878 9.01052V9.02051M1.00488 17L2.30317 13.1051C1.1811 11.4456 0.775179 9.48032 1.1609 7.57472C1.54661 5.66912 2.69772 3.95286 4.40018 2.74505C6.10264 1.53724 8.24061 0.920078 10.4166 1.0083C12.5925 1.09653 14.6584 1.88414 16.2301 3.2247C17.8018 4.56526 18.7724 6.36755 18.9613 8.29645C19.1502 10.2254 18.5447 12.1496 17.2573 13.7115C15.97 15.2733 14.0883 16.3664 11.9622 16.7876C9.83618 17.2088 7.61039 16.9294 5.6987 16.0013L1.00488 17Z" stroke="#2D2D2D" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.99304 9.01052V9.02051M5.99831 9.01052V9.02051M13.9878 9.01052V9.02051M1.00488 17L2.30317 13.1051C1.1811 11.4456 0.775179 9.48032 1.1609 7.57472C1.54661 5.66912 2.69772 3.95286 4.40018 2.74505C6.10264 1.53724 8.24061 0.920078 10.4166 1.0083C12.5925 1.09653 14.6584 1.88414 16.2301 3.2247C17.8018 4.56526 18.7724 6.36755 18.9613 8.29645C19.1502 10.2254 18.5447 12.1496 17.2573 13.7115C15.97 15.2733 14.0883 16.3664 11.9622 16.7876C9.83618 17.2088 7.61039 16.9294 5.6987 16.0013L1.00488 17Z" stroke="#2D2D2D" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                    <p className={home ? `mt-[5px] text-[#2591B2] homes text-[12px] leading-[14.06px] font-medium ` : "mt-[5px] text-[#000000] text-[12px] leading-[14.06px] font-normal"}>Chats</p>
+                    <p className={chat ? `mt-[5px] text-[#2591B2] homes text-[12px] leading-[14.06px] font-medium ` : "mt-[5px] text-[#000000] text-[12px] leading-[14.06px] font-normal"}>Chats</p>
                 </div>
 
                 <div className='flex items-center justify-center flex-col py-[16px]' onClick={serviceClick}>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H5M1 14V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H5M13 1H15C15.5304 1 16.0391 1.21071 16.4142 1.58579C16.7893 1.96086 17 2.46957 17 3V4M13 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V14M2 9H16" stroke="#2D2D2D" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 4V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H5M1 14V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H5M13 1H15C15.5304 1 16.0391 1.21071 16.4142 1.58579C16.7893 1.96086 17 2.46957 17 3V4M13 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V14M2 9H16" stroke="#2D2D2D" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
 
                     <p className={service ? "mt-[5px] text-[#2591B2] text-[12px] leading-[14.06px] font-medium" : "mt-[5px] text-[#000] text-[12px] font-normal leading-[14.06px]"}>Pay</p>

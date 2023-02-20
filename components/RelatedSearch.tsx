@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const RelatedSearch = () => {
     return (
         <div>
-            <div className='container mx-auto pt-[28px] pb-[138px] ' >
+            <div className='container mx-auto pt-[28px] pb-[138px] hidden md:block' >
                 <h2 className='text-[#0E1133] text-[25px] leading-[38px] font-medium tracking-[0.02em]'>Related Search</h2>
                 <div className='grid grid-cols-4 gap-[66px] mt-[10px] font-[400] '>
                     <motion.div

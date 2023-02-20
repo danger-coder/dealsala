@@ -6,18 +6,44 @@ import Slider from "react-slick";
 
 
 const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
 };
 
 const Sliders = () => {
     return (
-        <div className='container mx-auto'>
-            <div className='flex items-center justify-between pb-[34px] '>
+        <div className='container mx-auto  mb-[120px] md:mb-0'>
+            <div className='flex items-center justify-between pb-[34px] px-[12px] md:px-0'>
                 <p className='text-[#0E1133] text-[16px] lading-[24px] font-medium'>POPULAR CONTRACTORS</p>
                 <p className='text-[#2D2D2D] text-[16px] leading-[24px] font-medium'>View all &gt; </p>
             </div>

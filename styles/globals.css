@@ -322,6 +322,10 @@ body {
   flex-direction: column !important;
 }
 
+.product_box {
+  border: 1px solid #EDEDED;
+}
+
 .product_box:hover {
   box-shadow: -1px 3px 5px 3px rgba(184, 184, 184, 0.75);
   -webkit-box-shadow: -1px 3px 5px 3px rgba(184, 184, 184, 0.75);
@@ -381,6 +385,10 @@ body {
 
 
 @media (max-width:480px) {
+  .realState.ant-tabs>.ant-tabs-nav .ant-tabs-nav-list {
+    transform: translate(80px, 0px) !important;
+  }
+
   .slick-next:before {
     display: none !important;
   }
@@ -457,4 +465,26 @@ body {
 
 .gradients {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+/* .holiday.slick-slider {
+  display: none;
+} */
+
+@media (min-width:480px) {
+  .holiday.slick-slider {
+    display: none;
+  }
+}
+
+/* .close_btn {} */
+
+.close_btn .anticon {
+  position: absolute !important;
+  right: 25px !important;
+  top: 15px !important;
+}
+
+.ant-drawer .ant-drawer-header {
+  border: 0px !important;
 }

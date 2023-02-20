@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const MostSearchedLocation = () => {
     return (
-        <div className='container mx-auto pt-[60px] pb-[60px]'>
+        <div className='container mx-auto pt-[60px] pb-[60px] hidden md:block'>
             <div className='flex items-center flex-col justify-center '>
                 <h2 className='text-black text-[26px] leading-[39px] font-medium mb-[4px]'>Most Searched Locations </h2>
                 <p className='text-[#2D2D2D] text-[13px] leading-[15.73px] tracking-[0.02em]'>Choose Properties from different location lorem ipsum dolor.</p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const OurAgents = () => {
     return (
-        <div className='bg-[#F9F9F9] pt-[44px] pb-[66px]'>
+        <div className='bg-[#F9F9F9] pt-[44px] pb-[66px] hidden md:block'>
             <div className='container mx-auto'>
                 <div className='flex flex-col justify-center items-center'>
                     <h2 className='text-[26px] leading-[39px] text-black font-medium mb-[4px]'>Meet our Successful Agents</h2>
