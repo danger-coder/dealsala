@@ -16,25 +16,25 @@ const Banner = (props: Props) => {
     };
     return (
         <div>
-            <div className='container mx-auto mt-[16px]'>
+            <div className='container mx-auto '>
                 <Slider {...settings} className="mart">
                     <div>
-                        <img src="/../mart/banner.png" className='w-full' alt="" />
+                        <img src="/../mart/small_banner.png" className='w-full h-[336px] object-cover' alt="" />
                     </div>
                     <div>
-                        <img src="/../mart/banner.png" className='w-full' alt="" />
+                        <img src="/../mart/small_banner.png" className='w-full h-[336px] object-cover' alt="" />
                     </div>
                     <div>
-                        <img src="/../mart/banner.png" className='w-full' alt="" />
+                        <img src="/../mart/small_banner.png" className='w-full h-[336px] object-cover' alt="" />
                     </div>
                     <div>
-                        <img src="/../mart/banner.png" className='w-full' alt="" />
+                        <img src="/../mart/small_banner.png" className='w-full h-[336px] object-cover' alt="" />
                     </div>
                     <div>
-                        <img src="/../mart/banner.png" className='w-full' alt="" />
+                        <img src="/../mart/small_banner.png" className='w-full h-[336px] object-cover' alt="" />
                     </div>
                     <div>
-                        <img src="/../mart/banner.png" className='w-full' alt="" />
+                        <img src="/../mart/small_banner.png" className='w-full h-[336px] object-cover' alt="" />
                     </div>
                 </Slider>
             </div>

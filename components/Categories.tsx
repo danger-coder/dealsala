@@ -9,7 +9,7 @@ const Categories = () => {
         <>
 
             <div className='w-full grid md:grid-cols-9 grid-cols-4 container mx-auto md:mt-[32px] mt-[15px] px-[5px]  pb-[3px] '>
-                <Link href="/realState" >
+                <Link href="/realstate" >
                     <div
                         className='flex flex-col justify-center items-center pt-[22px]  gap-[8px] pb-[13px]  cursor-pointer transform hover:translate-y-[-7px] transition duration-300 ease-in-out'>
                         <img src="/../assets/house.png" alt="" className='md:w-[47px] md:h-[47px] h-[40px] w-[40px] object-contain' />

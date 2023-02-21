@@ -57,26 +57,29 @@ const items: TabsProps['items'] = [
         label: <div className='py-[11px] md:px-[47px] px-[14px] bg-[#F65128]/[0.7]'>
             <p className='text-[#fff] text-[14px] leading-[21px] font-medium'>For Sale</p>
         </div>,
-        children: <div className='bg-white w-[968px] h-[94px]'>d</div>,
+        children: <div className='bg-white md:w-[968px] w-[100vw] h-[94px]'>d</div>,
     },
     {
         key: '3',
         label: <div className='py-[11px] md:px-[47px] px-[14px] bg-[#F65128]/[0.7]'>
             <p className='text-[#fff] text-[14px] leading-[21px] font-medium'>For Rent </p>
         </div>,
-        children: <div className='bg-white w-[968px] h-[94px]'>d</div>,
+        children: <div className='bg-white md:w-[968px] w-[100vw] h-[94px]'>d</div>,
     },
 ];
 
 const Header = () => {
     return (
         <div className='relative w-full'>
-            <img src="/../realstate/topBanner.jpg" className='w-full h-[357px] bg-red-600 object-cover md:h-auto banner_img' alt="" />
+            <img src="/../realstate/topBanner.jpg" className='w-full h-[357px] bg-red-600 object-cover md:h-auto banner_img hidden md:block' alt="" />
+            <img src="/../assets/mblview/realstate_mblview_banner.png" className='w-full h-[357px] bg-red-600 object-cover md:h-auto banner_img md:hidden' alt="" />
+
             {/* topbar */}
             <div className='absolute top-[16px] xl:left-[71px] 2xl:left-[180px] text-white flex items-center justify-between w-full container mx-auto px-[14px] md:px-0'>
 
                 <div className=' cursor-pointer'>
-                    <img src="/../realstate/realstate.png" alt="" />
+                    <img src="/../realstate/realstate.png" className='hidden md:block' alt="" />
+                    <img src="/../assets/mblview/dealsalaWhitelogo.png" className='md:hidden' alt="" />
                 </div>
                 <div className='pr-[107px] hidden md:block'>
                     <ul className='flex items-center gap-[50px]'>
@@ -98,7 +101,7 @@ const Header = () => {
                     </svg>
                     <img src="/../assets/profile.png" className='cursor-pointer' alt="" />
                 </div>
-               
+
 
             </div>
 

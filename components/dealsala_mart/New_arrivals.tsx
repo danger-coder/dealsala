@@ -34,28 +34,7 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
-                        </div>
-                        <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[5px] pr-[15px] pt-[6px] justify-between 2xl:pr-[25px]'>
-                            <div className='flex  flex-wrap'>
-                                <p className='text-[#2D2D2D] text-[14px] leading-[21px] font-normal w-[149px]'>Playstation 3, 4GB RAM, 16GB ROM</p>
-                            </div>
-                            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.5 17C9.40868 16.9985 9.31924 16.9737 9.24009 16.9277C9.14151 16.8825 6.91887 15.6078 4.66038 13.5646C1.5684 10.753 1.38863e-06 7.95948 1.38863e-06 5.24733C-0.000811471 4.12521 0.355262 3.03241 1.01588 2.12959C1.6765 1.22676 2.60682 0.561528 3.67008 0.231669C4.73334 -0.0981905 5.87347 -0.0752737 6.92286 0.297051C7.97225 0.669375 8.87556 1.37147 9.5 2.30012C10.1244 1.37147 11.0277 0.669375 12.0771 0.297051C13.1265 -0.0752737 14.2667 -0.0981905 15.3299 0.231669C16.3932 0.561528 17.3235 1.22676 17.9841 2.12959C18.6447 3.03241 19.0008 4.12521 19 5.24733C19 7.95948 17.4316 10.753 14.3396 13.5646C12.0811 15.6078 9.85849 16.8825 9.75991 16.9277C9.68076 16.9737 9.59132 16.9985 9.5 17ZM5.19811 1.08869C4.10472 1.08869 3.05611 1.52683 2.28297 2.30673C1.50982 3.08663 1.07547 4.14439 1.07547 5.24733C1.07547 10.4275 8.04811 14.9478 9.5 15.8247C10.9519 14.9478 17.9245 10.4275 17.9245 5.24733C17.9266 4.2844 17.5974 3.35057 16.993 2.60523C16.3886 1.85988 15.5465 1.34921 14.6104 1.16036C13.6743 0.971514 12.7023 1.1162 11.8602 1.56972C11.0181 2.02324 10.3582 2.75749 9.99292 3.64716C9.95434 3.7474 9.88663 3.83353 9.79867 3.89426C9.7107 3.955 9.6066 3.9875 9.5 3.9875C9.3934 3.9875 9.2893 3.955 9.20133 3.89426C9.11337 3.83353 9.04566 3.7474 9.00708 3.64716C8.6937 2.88888 8.1647 2.24121 7.48681 1.78588C6.80893 1.33055 6.01254 1.08795 5.19811 1.08869Z" fill="#D9D9D9" />
-                            </svg>
-                        </div>
-                        <div className='pl-[8px] mt-[18px]
-                         '>
-                            <p className='text-[#F65128] text-[18px] leading-[27px] font-semibold'>Rs 120,000</p>
-                            <div className='flex items-center
-                         '>
-                                <p className='text-[#AEAEAE] text-[14px] leading-[21px] font-light line-through pr-[5px]'>Rs 140,000</p> <span className='text-[#2D2D2D] text-[13px] leading-[19.5px] font-normal'>-20%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className=''>
-                        <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/ariival2.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px]  pr-[15px] pt-[6px] justify-between 2xl:pr-[25px]'>
                             <div className='flex  flex-wrap'>
@@ -76,7 +55,28 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/arrival3.png" className='w-full' alt="" />
+                        </div>
+                        <div className='flex items-center gap-[36.66px] pl-[8px]  pr-[15px] pt-[6px] justify-between 2xl:pr-[25px]'>
+                            <div className='flex  flex-wrap'>
+                                <p className='text-[#2D2D2D] text-[14px] leading-[21px] font-normal w-[149px]'>Playstation 3, 4GB RAM, 16GB ROM</p>
+                            </div>
+                            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 17C9.40868 16.9985 9.31924 16.9737 9.24009 16.9277C9.14151 16.8825 6.91887 15.6078 4.66038 13.5646C1.5684 10.753 1.38863e-06 7.95948 1.38863e-06 5.24733C-0.000811471 4.12521 0.355262 3.03241 1.01588 2.12959C1.6765 1.22676 2.60682 0.561528 3.67008 0.231669C4.73334 -0.0981905 5.87347 -0.0752737 6.92286 0.297051C7.97225 0.669375 8.87556 1.37147 9.5 2.30012C10.1244 1.37147 11.0277 0.669375 12.0771 0.297051C13.1265 -0.0752737 14.2667 -0.0981905 15.3299 0.231669C16.3932 0.561528 17.3235 1.22676 17.9841 2.12959C18.6447 3.03241 19.0008 4.12521 19 5.24733C19 7.95948 17.4316 10.753 14.3396 13.5646C12.0811 15.6078 9.85849 16.8825 9.75991 16.9277C9.68076 16.9737 9.59132 16.9985 9.5 17ZM5.19811 1.08869C4.10472 1.08869 3.05611 1.52683 2.28297 2.30673C1.50982 3.08663 1.07547 4.14439 1.07547 5.24733C1.07547 10.4275 8.04811 14.9478 9.5 15.8247C10.9519 14.9478 17.9245 10.4275 17.9245 5.24733C17.9266 4.2844 17.5974 3.35057 16.993 2.60523C16.3886 1.85988 15.5465 1.34921 14.6104 1.16036C13.6743 0.971514 12.7023 1.1162 11.8602 1.56972C11.0181 2.02324 10.3582 2.75749 9.99292 3.64716C9.95434 3.7474 9.88663 3.83353 9.79867 3.89426C9.7107 3.955 9.6066 3.9875 9.5 3.9875C9.3934 3.9875 9.2893 3.955 9.20133 3.89426C9.11337 3.83353 9.04566 3.7474 9.00708 3.64716C8.6937 2.88888 8.1647 2.24121 7.48681 1.78588C6.80893 1.33055 6.01254 1.08795 5.19811 1.08869Z" fill="#D9D9D9" />
+                            </svg>
+                        </div>
+                        <div className='pl-[8px] mt-[18px]
+                         '>
+                            <p className='text-[#F65128] text-[18px] leading-[27px] font-semibold'>Rs 120,000</p>
+                            <div className='flex items-center
+                         '>
+                                <p className='text-[#AEAEAE] text-[14px] leading-[21px] font-light line-through pr-[5px]'>Rs 140,000</p> <span className='text-[#2D2D2D] text-[13px] leading-[19.5px] font-normal'>-20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className=''>
+                        <div>
+                            <img src="/../mart/arrival4.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[25px] pr-[15px] pt-[6px] justify-between'>
                             <div className='flex  flex-wrap'>
@@ -97,7 +97,7 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/arrival5.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[25px] pr-[15px] pt-[6px] justify-between'>
                             <div className='flex  flex-wrap'>
@@ -118,7 +118,7 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/arrival6.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[25px] pr-[15px] pt-[6px] justify-between'>
                             <div className='flex  flex-wrap'>
@@ -139,7 +139,7 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/arrival7.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[25px] pr-[15px] pt-[6px] justify-between'>
                             <div className='flex  flex-wrap'>
@@ -160,7 +160,7 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/ariival2.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[25px] pr-[15px] pt-[6px] justify-between'>
                             <div className='flex  flex-wrap'>
@@ -181,7 +181,7 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/arrival3.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[25px] pr-[15px] pt-[6px] justify-between'>
                             <div className='flex  flex-wrap'>
@@ -202,7 +202,7 @@ const New_arrivals = (props: Props) => {
                     </div>
                     <div className=''>
                         <div>
-                            <img src="/../mart/newArival.png" className='w-full' alt="" />
+                            <img src="/../mart/arrival3.png" className='w-full' alt="" />
                         </div>
                         <div className='flex items-center gap-[36.66px] pl-[8px] 2xl:pr-[25px] pr-[15px] pt-[6px] justify-between'>
                             <div className='flex  flex-wrap'>

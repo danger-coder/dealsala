@@ -27,7 +27,7 @@ const Properties = () => {
 
                         <div className='relative gradients'>
                             <img src="/../assets/properties1.jpg" alt="" className='md:w-full md:h-auto h-[83px] w-[85px]  rounded-[3px] ' />
-                            <p className='absolute bottom-[6px] left-[50%] z-10 transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins'>Rent</p>
+                            <p className='absolute bottom-[6px] left-[50%] z-10 transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins md:hidden '>Rent</p>
                             <div className='gradient absolute left-0 top-0 h-[83px] w-[83px]'>
 
                             </div>
@@ -52,7 +52,7 @@ const Properties = () => {
                         className='cursor-pointer'>
                         <div className='relative'>
                             <img src="/../assets/properties2.jpg" alt="" className='md:w-full md:h-auto w-[83px] h-[83px] rounded-[3px]' />
-                            <p className='absolute bottom-[6px]  z-10 left-[50%] transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins'>Buy</p>
+                            <p className='absolute bottom-[6px]  z-10 left-[50%] transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins md:hidden'>Buy</p>
                             <div className='gradient absolute left-0 top-0 h-[83px] w-[83px]'>
 
                             </div>
@@ -77,7 +77,7 @@ const Properties = () => {
                         className='cursor-pointer'>
                         <div className='relative'>
                             <img src="/../assets/properties3.jpg" alt="" className='md:w-full md:h-auto w-[83px] h-[83px] rounded-[3px]' />
-                            <p className='absolute bottom-[6px]  z-10 left-[50%] transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins'>Flats</p>
+                            <p className='absolute bottom-[6px]  z-10 left-[50%] transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins md:hidden'>Flats</p>
                             <div className='gradient absolute left-0 top-0 h-[83px] w-[83px]'>
 
                             </div>
@@ -105,7 +105,7 @@ const Properties = () => {
 
                             </div>
                             <img src="/../assets/properties4.jpg" alt="" className='md:w-full md:h-auto w-[83px] h-[83px] rounded-[3px]' />
-                            <p className='absolute bottom-[6px] left-[50%] z-10 transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins'>Apartments</p>
+                            <p className='absolute bottom-[6px] left-[50%] z-10 transform translate-x-[-50%] inline-block text-center text-white text-[12px] leading-[13.8px] font-normal font-poppins md:hidden'>Apartments</p>
 
                         </div>
                         <div className='hidden md:block'>

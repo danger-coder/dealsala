@@ -14,9 +14,14 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const router = useRouter();
 
-  if (router.pathname === '/realState') {
+  if (router.pathname === '/realstate') {
     return <> <Component {...pageProps} />
-  <RealstateNav/>
+      <RealstateNav />
+    </>;
+  }
+  if (router.pathname === '/realstate/search') {
+    return <> <Component {...pageProps} />
+      <RealstateNav />
     </>;
   }
   return (
