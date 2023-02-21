@@ -115,7 +115,7 @@ const TopBar = () => {
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.10301 3.84211H19.8408M1.15869 11.4211H19.8408M1.15869 19H19.8408M1.15869 6.68421L3.70625 3.84211L1.15869 1" stroke="#2D2D2D" strokeWidth="1.69838" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <input type="text" placeholder='Search products' className='placeholder:text-[#817D79] text-[#817D79] text-[13px] font-normal font-poppins leading-[19.5px]' />
+                <input type="text" placeholder='Search products' className='placeholder:text-[#817D79] text-[#817D79] text-[13px] font-normal font-poppins leading-[19.5px] outline-none' />
             </div>
         </div>
     )

@@ -8,6 +8,7 @@ import RelatedSearch from '../components/RelatedSearch'
 import Nav from '../components/mbl_component/Nav'
 import { useRouter } from 'next/router'
 import RealstateNav from '../components/mbl_component/RealstateNav'
+import Btn_nav from '../components/mbl_component/Btn_nav'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -22,6 +23,17 @@ export default function App({ Component, pageProps }: AppProps) {
   if (router.pathname === '/realstate/search') {
     return <> <Component {...pageProps} />
       <RealstateNav />
+    </>;
+  }
+  if (router.pathname === '/ecommerce') {
+    return <> <Component {...pageProps} />
+      <RealstateNav />
+    </>;
+  }
+  if (router.pathname === '/realstate/detail') {
+    return <> <Component {...pageProps} />
+      {/* <RealstateNav /> */}
+      <Btn_nav />
     </>;
   }
   return (
