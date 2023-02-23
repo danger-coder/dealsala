@@ -30,6 +30,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <RealstateNav />
     </>;
   }
+  if (router.pathname === '/ecommerce/search') {
+    return <> <Component {...pageProps} />
+      {/* <RealstateNav /> */}
+    </>;
+  }
   if (router.pathname === '/realstate/detail') {
     return <> <Component {...pageProps} />
       {/* <RealstateNav /> */}

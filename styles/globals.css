@@ -526,6 +526,15 @@ body {
 .ant-rate {
   font-size: 16px !important;
 }
+
 .ant-rate .ant-rate-star:not(:last-child) {
   margin-inline-end: 2px;
+}
+
+.category.ant-tabs-left>.ant-tabs-nav .ant-tabs-tab {
+  padding: 17px 0px !important;
+}
+
+.category .ant-tabs-left>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab {
+  margin: 0px !important;
 }
