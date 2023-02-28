@@ -18,11 +18,14 @@ export default function App({ Component, pageProps }: AppProps) {
   if (router.pathname === '/realstate') {
     return <> <Component {...pageProps} />
       <RealstateNav />
+      <Newsletter />
+      <FooterInfo />
+      <Footer />
     </>;
   }
   if (router.pathname === '/realstate/search') {
     return <> <Component {...pageProps} />
-      <RealstateNav />
+      {/* <RealstateNav /> */}
     </>;
   }
   if (router.pathname === '/ecommerce') {

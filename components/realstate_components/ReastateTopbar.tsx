@@ -21,7 +21,7 @@ const RealstateTopbar = () => {
 
 
     const searchClick = () => {
-        router.push("/productsearch")
+        router.push("/realstate/search")
     }
 
 
@@ -122,7 +122,7 @@ const RealstateTopbar = () => {
                     </div>
                 </div>
             </Drawer>
-            <div className=' flex items-center gap-[9px] mt-[7px] sm:hidden'>
+            <div className=' flex items-center gap-[9px] mt-[7px] sm:hidden '>
                 <Select className='mbl_select'
                     defaultValue="Kathmandu"
                     style={{ width: 120, }}

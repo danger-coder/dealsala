@@ -2,6 +2,7 @@ import React from 'react'
 import FindYourConformHome from '../../components/FindYourConformHome'
 import Banner from '../../components/realstate_components/Banner'
 import FeaturedProperties from '../../components/realstate_components/FeaturedProperties'
+import FindProperty from '../../components/realstate_components/FindProperty'
 import Header from '../../components/realstate_components/Header'
 import MostSearchedLocation from '../../components/realstate_components/MostSearchedLocation'
 import OurAgents from '../../components/realstate_components/OurAgents'
@@ -19,6 +20,7 @@ const index = () => {
             <FeaturedProperties />
             <FindYourConformHome />
             <PropertyForRent />
+            <FindProperty />
             <PropertyForSell />
             <Slider />
             <MostSearchedLocation />

@@ -146,7 +146,7 @@ const FeaturedProperties = () => {
 
 
             </div>
-            <FeatureSlider />
+            <FeatureSlider name={"Featured Properties for Sale"} />
         </div>
     )
 }

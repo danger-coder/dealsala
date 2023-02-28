@@ -40,11 +40,14 @@ const settings = {
     ]
 };
 
-const FeatureSlider = () => {
+type Props = {
+    name: String
+}
+const FeatureSlider = (props: Props) => {
     return (
-        <div className='container mx-auto  mb-[50px] md:mb-0'>
+        <div className='container mx-auto  mb-[50px] md:mb-0 md:hidden'>
             <div className='flex items-center justify-between pb-[16px] px-[12px] md:px-0'>
-                <p className='text-[#0E1133] text-[16px] lading-[24px] font-medium'>Featured Properties for Sale</p>
+                <p className='text-[#0E1133] text-[16px] lading-[24px] font-medium'>{props.name}</p>
                 <p className='text-[#2D2D2D] text-[16px] leading-[24px] font-medium'> &gt; </p>
             </div>
             <Slider {...settings} className="  w-full  realState_slider ">

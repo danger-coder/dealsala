@@ -42,7 +42,7 @@ const settings = {
 
 const Sliders = () => {
     return (
-        <div className='container mx-auto  mb-[120px] md:mb-0'>
+        <div className='container mx-auto  mb-[120px] md:mb-0 md:hidden'>
             <div className='flex items-center justify-between pb-[34px] px-[12px] md:px-0'>
                 <p className='text-[#0E1133] text-[16px] lading-[24px] font-medium'>POPULAR CONTRACTORS</p>
                 <p className='text-[#2D2D2D] text-[16px] leading-[24px] font-medium'>View all &gt; </p>
