@@ -30,10 +30,12 @@ const Categories = () => {
                     <img src="/../assets/service.png" alt="" className='md:w-[48px] md:h-[47px] h-[40px] w-[40px]' />
                     <p className='text-[13px] leading-[19.5px] tracking-[0.02em] font-normal text-[#2D2D2D]'>Services</p>
                 </div>
-                <div className='flex flex-col justify-center items-center pt-[22px]  gap-[8px] pb-[13px] cursor-pointer transform hover:translate-y-[-7px] transition duration-300 ease-in-out'>
-                    <img src="/../assets/apparels.png" alt="" className='md:w-[48px] md:h-[47px] h-[40px] w-[40px]' />
-                    <p className='text-[13px] leading-[19.5px] tracking-[2%] font-normal text-[#2D2D2D]'>Aparrels</p>
-                </div>
+                <Link href="/mart">
+                    <div className='flex flex-col justify-center items-center pt-[22px]  gap-[8px] pb-[13px] cursor-pointer transform hover:translate-y-[-7px] transition duration-300 ease-in-out'>
+                        <img src="/../assets/apparels.png" alt="" className='md:w-[48px] md:h-[47px] h-[40px] w-[40px]' />
+                        <p className='text-[13px] leading-[19.5px] tracking-[2%] font-normal text-[#2D2D2D]'>Aparrels</p>
+                    </div>
+                </Link>
                 <div className='flex flex-col justify-center items-center pt-[22px]  gap-[8px] pb-[13px] cursor-pointer transform hover:translate-y-[-7px] transition duration-300 ease-in-out'>
                     <img src="/../assets/decoration.png" alt="" className='md:w-[47px] md:h-[47px] h-[40px] w-[40px]' />
                     <p className='text-[13px] leading-[19.5px] tracking-[0.02em] font-normal text-[#2D2D2D]'>Decorations</p>

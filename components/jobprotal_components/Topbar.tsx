@@ -15,7 +15,7 @@ const TopBar = () => {
             <div className=' sm:flex'>
                 <Link href="/">
                     <div className='w-[154.02px]'>
-                        <img src="/../jobportal/logo.png" className='w-full h-[45.01px] object-contain cursor-pointer' alt="" />
+                        <img src="/../assets/mblview/buyselo.png" className='hidden md:block h-[55px] w-full transform scale-[120%]' alt="" />
                     </div>
                 </Link>
                 <div className='flex items-center  w-full ml-[36px]'>

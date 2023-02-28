@@ -146,6 +146,11 @@ body {
 
 }
 
+.mbl_select .ant-select-selector {
+  border-right: 1px solid rgba(128, 128, 128, 0.485) !important;
+
+}
+
 .second .ant-select .ant-select-arrow {
   margin-top: -3px !important;
   width: 10.6px !important;
@@ -313,7 +318,7 @@ body {
 
 .box {
   width: 95% !important;
-  background-color: #f9f9f9 !important;
+  background-color: transparent !important;
 }
 
 .box2 {
@@ -386,6 +391,12 @@ body {
 
 
 @media (max-width:480px) {
+
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .realState.ant-tabs>.ant-tabs-nav .ant-tabs-nav-list {
     transform: translate(80px, 0px) !important;
   }
@@ -424,7 +435,19 @@ body {
     position: relative;
   }
 
+  .mbl_select .ant-select-selector {
+    display: none;
+
+  }
+  .realState_slider.slick-slider {
+    display: none !important;
+
+  }
+
+
 }
+
+
 
 @media (min-width:1024px) {
   .landing.slick-slider {
@@ -537,4 +560,30 @@ body {
 
 .category .ant-tabs-left>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab {
   margin: 0px !important;
+}
+
+.ant-tabs-left>.ant-tabs-content-holder>.ant-tabs-content>.ant-tabs-tabpane {
+  padding-left: 0px !important;
+  /* padding-right: 0px !important; */
+
+}
+
+.product_search .ant-drawer-title {
+  text-align: center !important;
+}
+
+.ant-slider:hover .ant-slider-track {
+  background-color: #11AFD1 !important;
+}
+
+.ant-drawer-bottom>.ant-drawer-content-wrapper {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  bottom: -70px !important;
+}
+
+.realstate_mbl_banner {
+  background: url("/../realstate/mblview/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

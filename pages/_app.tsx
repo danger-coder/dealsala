@@ -30,6 +30,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <RealstateNav />
     </>;
   }
+  if (router.pathname === '/ecommerce/categories') {
+    return <> <Component {...pageProps} />
+      <RealstateNav />
+    </>;
+  }
   if (router.pathname === '/ecommerce/search') {
     return <> <Component {...pageProps} />
       {/* <RealstateNav /> */}
@@ -39,6 +44,18 @@ export default function App({ Component, pageProps }: AppProps) {
     return <> <Component {...pageProps} />
       {/* <RealstateNav /> */}
       <Btn_nav />
+    </>;
+  }
+  if (router.pathname === '/productsearch') {
+    return <> <Component {...pageProps} />
+      {/* <RealstateNav /> */}
+      {/* <Btn_nav /> */}
+    </>;
+  }
+  if (router.pathname === '/singleproductview') {
+    return <> <Component {...pageProps} />
+      {/* <RealstateNav /> */}
+      {/* <Btn_nav /> */}
     </>;
   }
   return (

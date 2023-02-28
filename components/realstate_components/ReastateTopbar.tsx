@@ -8,7 +8,7 @@ const handleChange = (value: string) => {
     console.log(`selected ${value}`);
 };
 
-const TopBar = () => {
+const RealstateTopbar = () => {
     const [open, setOpen] = useState(false);
     const router = useRouter()
     const showDrawer = () => {
@@ -27,7 +27,7 @@ const TopBar = () => {
 
 
     return (
-        <div className=' container mx-auto  pt-[22px] px-[12px] md:px-0'>
+        <div className=' container mx-auto  pt-[22px] px-[12px] md:px-0 md:hidden'>
 
             <div className=' sm:flex flex  items-center justify-between'>
                 <svg className='sm:hidden' width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,8 +35,8 @@ const TopBar = () => {
                 </svg>
                 <Link href="/">
                     <div className='w-[154.02px] flex items-center justify-center'>
-                        <img src="/../assets/mblview/buyselo.png" className='md:w-full md:h-[55px] transform scale-[120%] h-[55px] mr-[-30px] w-[142px] object-contain cursor-pointer ' alt="" />
-                        {/* <img src="/../assets/buyselo.png" className='md:w-full md:h-[45.01px] h-[32px] w-[116px] object-contain cursor-pointer' alt="" /> */}
+                        {/* <img src="/../assets/logo.png" className='md:w-full md:h-[45.01px] h-[32px] w-[116px] object-contain cursor-pointer' alt="" /> */}
+                        <img src="/../assets/mblview/buyselo.png" className='md:w-full md:h-[45.01px] h-[55px] mr-[-30px] w-[142px] object-contain cursor-pointer' alt="" />
                     </div>
                 </Link>
                 <div className='md:flex items-center  w-full ml-[36px] hidden'>
@@ -155,4 +155,4 @@ const TopBar = () => {
     )
 }
 
-export default TopBar
+export default RealstateTopbar

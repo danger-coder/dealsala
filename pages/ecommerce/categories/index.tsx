@@ -15,9 +15,42 @@ const items: TabsProps['items'] = [
         label: <div className='w-[130px]'>
             <p className='w-[129px] text-[black]/[0.5] text-[13px] leading-[16.5px] font-poppins'>Mens Fashion</p>
         </div>,
-        children: <div>
-            <img src="/../assets/category_view.png" alt="" />
-            hgjhjjh
+        children: <div className='bg-[#F9F9F9]'>
+            <img src="/../assets/category_view.png" alt="" className='ml-[6px] w-[95%] mr-[6px]' />
+            <div className='mt-[8px] pt-[9px] bg-white ml-[6px] pl-[6px]'>
+                <h1 className='text-[#000000] text-[11px] leading-[16.5px] font-medium font-poppins'>Sunglasses</h1>
+                <div className='flex items-flex-start  mt-[10px] gap-[10px] '>
+                    <div>
+                        <div className='h-[67px] w-[68px] bg-[#F9F9F9] rounded-[1px]'></div>
+                        <p>Lorem</p>
+                    </div>
+                    <div>
+                        <div className='h-[67px] w-[68px] bg-[#F9F9F9] rounded-[1px]'></div>
+                        <p>Lorem</p>
+                    </div>
+                </div>
+            </div>
+            <div className='mt-[8px] pt-[9px] bg-white ml-[6px] pl-[6px]'>
+                <h1 className='text-[#000000] text-[11px] leading-[16.5px] font-medium font-poppins'>Footwears</h1>
+                <div className='flex items-flex-start  mt-[10px] gap-[10px] flex-wrap'>
+                    <div>
+                        <div className='h-[67px] w-[68px] bg-[#F9F9F9] rounded-[1px]'></div>
+                        <p>Lorem</p>
+                    </div>
+                    <div>
+                        <div className='h-[67px] w-[68px] bg-[#F9F9F9] rounded-[1px]'></div>
+                        <p>Lorem</p>
+                    </div>
+                    <div>
+                        <div className='h-[67px] w-[68px] bg-[#F9F9F9] rounded-[1px]'></div>
+                        <p>Lorem</p>
+                    </div>
+                    <div>
+                        <div className='h-[67px] w-[68px] bg-[#F9F9F9] rounded-[1px]'></div>
+                        <p>Lorem</p>
+                    </div>
+                </div>
+            </div>
         </div>,
     },
     {

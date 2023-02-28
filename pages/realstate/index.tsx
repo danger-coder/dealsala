@@ -1,5 +1,6 @@
 import React from 'react'
 import FindYourConformHome from '../../components/FindYourConformHome'
+import Banner from '../../components/realstate_components/Banner'
 import FeaturedProperties from '../../components/realstate_components/FeaturedProperties'
 import Header from '../../components/realstate_components/Header'
 import MostSearchedLocation from '../../components/realstate_components/MostSearchedLocation'
@@ -13,6 +14,8 @@ const index = () => {
     return (
         <div>
             <Header />
+            <Banner />
+
             <FeaturedProperties />
             <FindYourConformHome />
             <PropertyForRent />
