@@ -6,11 +6,11 @@ const handleChange = (value: string) => {
     console.log(`selected ${value}`);
 };
 
-const TopBar = () => {
+const TopBars = () => {
 
 
     return (
-        <div className=' container mx-auto  pt-[22px] '>
+        <div className=' container mx-auto  pt-[22px] hidden md:block'>
 
             <div className=' sm:flex'>
                 <Link href="/">
@@ -79,4 +79,4 @@ const TopBar = () => {
     )
 }
 
-export default TopBar
+export default TopBars

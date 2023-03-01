@@ -1,9 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 // import { motion } from "framer-motion"
 
 import Link from 'next/link'
 
 const Categories = () => {
+
+
+    // const [width, setWidth] = useState(window.innerWidth);
+
+    // useEffect(() => {
+    //     function handleResize() {
+    //         setWidth(window.innerWidth);
+    //     }
+
+    //     window.addEventListener("resize", handleResize);
+    //     return () => window.removeEventListener("resize", handleResize);
+    // }, []);
+    // console.log(width, "width");
 
     return (
         <>
@@ -30,7 +43,7 @@ const Categories = () => {
                     <img src="/../assets/service.png" alt="" className='md:w-[48px] md:h-[47px] h-[40px] w-[40px]' />
                     <p className='text-[13px] leading-[19.5px] tracking-[0.02em] font-normal text-[#2D2D2D]'>Services</p>
                 </div>
-                <Link href="/mart">
+                <Link href="/ecommerce" >
                     <div className='flex flex-col justify-center items-center pt-[22px]  gap-[8px] pb-[13px] cursor-pointer transform hover:translate-y-[-7px] transition duration-300 ease-in-out'>
                         <img src="/../assets/apparels.png" alt="" className='md:w-[48px] md:h-[47px] h-[40px] w-[40px]' />
                         <p className='text-[13px] leading-[19.5px] tracking-[2%] font-normal text-[#2D2D2D]'>Aparrels</p>

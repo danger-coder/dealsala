@@ -2,6 +2,7 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Link from 'next/link';
 
 
 
@@ -51,27 +52,33 @@ const FeatureSlider = (props: Props) => {
                 <p className='text-[#2D2D2D] text-[16px] leading-[24px] font-medium'> &gt; </p>
             </div>
             <Slider {...settings} className="  w-full  realState_slider ">
-                <div className='mx-[20px] box   h-[183px]   relative'>
-                    <div className='w-full'>
-                        <img src="/../realstate/mblview/sofa.png" className='' alt="" />
+                <Link href="/realstate/singlepropertyview">
+                    <div className='mx-[20px] box   h-[183px]   relative'>
+                        <div className='w-full'>
+                            <img src="/../realstate/mblview/sofa.png" className='' alt="" />
+                        </div>
+                        <h2 className='text-[14px] text-black leading-[21px] font-semibold font-poppins mt-[8px]'>$1,200,000</h2>
+                        <p className='text-black text-[12px] leading-[18px] font-normal font-poppins'>2 Plough Close, Luton, LU4 0SS</p>
                     </div>
-                    <h2 className='text-[14px] text-black leading-[21px] font-semibold font-poppins mt-[8px]'>$1,200,000</h2>
-                    <p className='text-black text-[12px] leading-[18px] font-normal font-poppins'>2 Plough Close, Luton, LU4 0SS</p>
-                </div>
-                <div className='mx-[20px] box   h-[183px]   relative'>
-                    <div className='w-full'>
-                        <img src="/../realstate/mblview/sofa.png" className='' alt="" />
+                </Link>
+                <Link href="/realstate/singlepropertyview">
+                    <div className='mx-[20px] box   h-[183px]   relative'>
+                        <div className='w-full'>
+                            <img src="/../realstate/mblview/sofa.png" className='' alt="" />
+                        </div>
+                        <h2 className='text-[14px] text-black leading-[21px] font-semibold font-poppins mt-[8px]'>$1,200,000</h2>
+                        <p className='text-black text-[12px] leading-[18px] font-normal font-poppins'>2 Plough Close, Luton, LU4 0SS</p>
                     </div>
-                    <h2 className='text-[14px] text-black leading-[21px] font-semibold font-poppins mt-[8px]'>$1,200,000</h2>
-                    <p className='text-black text-[12px] leading-[18px] font-normal font-poppins'>2 Plough Close, Luton, LU4 0SS</p>
-                </div>
-                <div className='mx-[20px] box   h-[183px]   relative'>
-                    <div className='w-full'>
-                        <img src="/../realstate/mblview/sofa.png" className='' alt="" />
+                </Link>
+                <Link href="/realstate/singlepropertyview">
+                    <div className='mx-[20px] box   h-[183px]   relative'>
+                        <div className='w-full'>
+                            <img src="/../realstate/mblview/sofa.png" className='' alt="" />
+                        </div>
+                        <h2 className='text-[14px] text-black leading-[21px] font-semibold font-poppins mt-[8px]'>$1,200,000</h2>
+                        <p className='text-black text-[12px] leading-[18px] font-normal font-poppins'>2 Plough Close, Luton, LU4 0SS</p>
                     </div>
-                    <h2 className='text-[14px] text-black leading-[21px] font-semibold font-poppins mt-[8px]'>$1,200,000</h2>
-                    <p className='text-black text-[12px] leading-[18px] font-normal font-poppins'>2 Plough Close, Luton, LU4 0SS</p>
-                </div>
+                </Link>
 
 
 

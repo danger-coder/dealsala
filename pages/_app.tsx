@@ -17,13 +17,25 @@ export default function App({ Component, pageProps }: AppProps) {
 
   if (router.pathname === '/realstate') {
     return <> <Component {...pageProps} />
-      <RealstateNav />
+      {/* <RealstateNav /> */}
+      <Nav />
       <Newsletter />
       <FooterInfo />
       <Footer />
     </>;
   }
   if (router.pathname === '/realstate/search') {
+    return <> <Component {...pageProps} />
+      {/* <RealstateNav /> */}
+    </>;
+  }
+
+  if (router.pathname === '/realstate/singlepropertyview') {
+    return <> <Component {...pageProps} />
+      {/* <RealstateNav /> */}
+    </>;
+  }
+  if (router.pathname === '/jobportal/singlejobview') {
     return <> <Component {...pageProps} />
       {/* <RealstateNav /> */}
     </>;
@@ -39,6 +51,11 @@ export default function App({ Component, pageProps }: AppProps) {
     </>;
   }
   if (router.pathname === '/ecommerce/search') {
+    return <> <Component {...pageProps} />
+      {/* <RealstateNav /> */}
+    </>;
+  }
+  if (router.pathname === '/ecommerce/detail') {
     return <> <Component {...pageProps} />
       {/* <RealstateNav /> */}
     </>;

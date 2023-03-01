@@ -4,6 +4,7 @@ import { Button, Drawer } from 'antd';
 import { Slider, Switch } from 'antd';
 import type { DrawerProps, RadioChangeEvent } from 'antd';
 import Link from 'next/link';
+import RealstateTopbar from '../../../components/realstate_components/ReastateTopbar';
 
 type Props = {}
 
@@ -138,7 +139,7 @@ const index = (props: Props) => {
                     </div>
                 </div>
             </Drawer>
-            <TopBar />
+            <RealstateTopbar />
             <div className='flex items-center justify-between pl-[20px] pr-[18.5px] mt-[15px] bg-[#F9F9F9] py-[11px]'>
                 <div className='flex items-center gap-[11px]' onClick={showDrawer}>
                     <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,7 +158,7 @@ const index = (props: Props) => {
             </div>
 
             {/* search product results */}
-            <div>
+            <div className=''>
                 <div className='flex items-center gap-[6px] mt-[22px] px-[12px]'>
                     <div>
                         <div className='bg-[#F9F9F9] h-[96px] w-[105px] '>
@@ -165,17 +166,17 @@ const index = (props: Props) => {
                         </div>
                         <h2 className='text-black text-[15px] bg-[#F9F9F9] pt-[3px] pb-[4px] leading-[18px] font-bold tracking-[0.02em] mt-[13px] text-center'>Rs 120,000</h2>
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <h1 className='text-[#505056] text-[16px] leading-[19.2px] font-bold tracking-[0.02em] max-w-[255px] mb-[8px]'>Paradise Apartments</h1>
                         <p className='text-[#505056] text-[13px] leading-[13.2px] font-normal'><span className='text-[#11AFD1]'>4BHK</span> - Kathmandu - Unfurnished </p>
                         <div className='flex items-center mt-[8px] gap-[8px]'>
                             <img src="/../realstate/mblview/nepalawash.png" alt="" />
                             <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>Nepal Awash</p>
                         </div>
-                        <div className='flex items-center gap-[10px] mt-[32px]'>
-                            <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
-                            <Link href="/singleproductview">
-                                <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className='flex items-center gap-[10px] mt-[32px] w-full'>
+                            <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
+                            <Link href="/realstate/singlepropertyview" className='flex-1'>
+                                <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.75051 8.52832L9.78383 7.49459C9.923 7.35708 10.0991 7.26296 10.2907 7.22363C10.4823 7.18431 10.6812 7.20149 10.8633 7.27307L12.1226 7.77609C12.3066 7.8508 12.4643 7.97831 12.576 8.14256C12.6876 8.30681 12.7482 8.50045 12.75 8.69907V11.0065C12.7489 11.1416 12.7205 11.2751 12.6665 11.399C12.6125 11.5228 12.534 11.6345 12.4358 11.7272C12.3375 11.8199 12.2215 11.8917 12.0948 11.9384C11.968 11.985 11.8331 12.0056 11.6982 11.9987C2.87352 11.4495 1.09289 3.97343 0.756143 1.11221C0.740511 0.971699 0.754794 0.829474 0.798052 0.694886C0.84131 0.560298 0.912563 0.436399 1.00712 0.331338C1.10168 0.226277 1.21741 0.142436 1.34668 0.0853313C1.47596 0.0282263 1.61585 -0.00084875 1.75717 1.88606e-05H3.98526C4.18408 0.000607621 4.37819 0.0606895 4.5426 0.172537C4.70702 0.284384 4.83422 0.442881 4.90786 0.627643L5.41068 1.88751C5.48461 2.0689 5.50347 2.26807 5.46491 2.46013C5.42635 2.65218 5.33208 2.82862 5.19387 2.96739L4.16055 4.00112C4.16055 4.00112 4.75563 8.02991 8.75051 8.52832Z" fill="#11AFD1" />
                                 </svg>Call Now</button>
                             </Link>
@@ -189,7 +190,7 @@ const index = (props: Props) => {
                         </div>
                         <h2 className='text-black text-[15px] bg-[#F9F9F9] pt-[3px] pb-[4px] leading-[18px] font-bold tracking-[0.02em] mt-[13px] text-center'>Rs 120,000</h2>
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <h1 className='text-[#505056] text-[16px] leading-[19.2px] font-bold tracking-[0.02em] max-w-[255px] mb-[8px]'>Paradise Apartments</h1>
                         <p className='text-[#505056] text-[13px] leading-[13.2px] font-normal'><span className='text-[#11AFD1]'>4BHK</span> - Kathmandu - Unfurnished </p>
                         <div className='flex items-center mt-[8px] gap-[8px]'>
@@ -197,9 +198,9 @@ const index = (props: Props) => {
                             <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>Nepal Awash</p>
                         </div>
                         <div className='flex items-center gap-[10px] mt-[32px]'>
-                            <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
-                            <Link href="/singleproductview">
-                                <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
+                            <Link href="/realstate/singlepropertyview" className='flex-1'>
+                                <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.75051 8.52832L9.78383 7.49459C9.923 7.35708 10.0991 7.26296 10.2907 7.22363C10.4823 7.18431 10.6812 7.20149 10.8633 7.27307L12.1226 7.77609C12.3066 7.8508 12.4643 7.97831 12.576 8.14256C12.6876 8.30681 12.7482 8.50045 12.75 8.69907V11.0065C12.7489 11.1416 12.7205 11.2751 12.6665 11.399C12.6125 11.5228 12.534 11.6345 12.4358 11.7272C12.3375 11.8199 12.2215 11.8917 12.0948 11.9384C11.968 11.985 11.8331 12.0056 11.6982 11.9987C2.87352 11.4495 1.09289 3.97343 0.756143 1.11221C0.740511 0.971699 0.754794 0.829474 0.798052 0.694886C0.84131 0.560298 0.912563 0.436399 1.00712 0.331338C1.10168 0.226277 1.21741 0.142436 1.34668 0.0853313C1.47596 0.0282263 1.61585 -0.00084875 1.75717 1.88606e-05H3.98526C4.18408 0.000607621 4.37819 0.0606895 4.5426 0.172537C4.70702 0.284384 4.83422 0.442881 4.90786 0.627643L5.41068 1.88751C5.48461 2.0689 5.50347 2.26807 5.46491 2.46013C5.42635 2.65218 5.33208 2.82862 5.19387 2.96739L4.16055 4.00112C4.16055 4.00112 4.75563 8.02991 8.75051 8.52832Z" fill="#11AFD1" />
                                 </svg>Call Now</button>
                             </Link>
@@ -213,7 +214,7 @@ const index = (props: Props) => {
                         </div>
                         <h2 className='text-black text-[15px] bg-[#F9F9F9] pt-[3px] pb-[4px] leading-[18px] font-bold tracking-[0.02em] mt-[13px] text-center'>Rs 120,000</h2>
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <h1 className='text-[#505056] text-[16px] leading-[19.2px] font-bold tracking-[0.02em] max-w-[255px] mb-[8px]'>Paradise Apartments</h1>
                         <p className='text-[#505056] text-[13px] leading-[13.2px] font-normal'><span className='text-[#11AFD1]'>4BHK</span> - Kathmandu - Unfurnished </p>
                         <div className='flex items-center mt-[8px] gap-[8px]'>
@@ -221,9 +222,9 @@ const index = (props: Props) => {
                             <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>Nepal Awash</p>
                         </div>
                         <div className='flex items-center gap-[10px] mt-[32px]'>
-                            <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
-                            <Link href="/singleproductview">
-                                <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
+                            <Link href="/realstate/singlepropertyview" className='flex-1'>
+                                <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.75051 8.52832L9.78383 7.49459C9.923 7.35708 10.0991 7.26296 10.2907 7.22363C10.4823 7.18431 10.6812 7.20149 10.8633 7.27307L12.1226 7.77609C12.3066 7.8508 12.4643 7.97831 12.576 8.14256C12.6876 8.30681 12.7482 8.50045 12.75 8.69907V11.0065C12.7489 11.1416 12.7205 11.2751 12.6665 11.399C12.6125 11.5228 12.534 11.6345 12.4358 11.7272C12.3375 11.8199 12.2215 11.8917 12.0948 11.9384C11.968 11.985 11.8331 12.0056 11.6982 11.9987C2.87352 11.4495 1.09289 3.97343 0.756143 1.11221C0.740511 0.971699 0.754794 0.829474 0.798052 0.694886C0.84131 0.560298 0.912563 0.436399 1.00712 0.331338C1.10168 0.226277 1.21741 0.142436 1.34668 0.0853313C1.47596 0.0282263 1.61585 -0.00084875 1.75717 1.88606e-05H3.98526C4.18408 0.000607621 4.37819 0.0606895 4.5426 0.172537C4.70702 0.284384 4.83422 0.442881 4.90786 0.627643L5.41068 1.88751C5.48461 2.0689 5.50347 2.26807 5.46491 2.46013C5.42635 2.65218 5.33208 2.82862 5.19387 2.96739L4.16055 4.00112C4.16055 4.00112 4.75563 8.02991 8.75051 8.52832Z" fill="#11AFD1" />
                                 </svg>Call Now</button>
                             </Link>
@@ -237,7 +238,7 @@ const index = (props: Props) => {
                         </div>
                         <h2 className='text-black text-[15px] bg-[#F9F9F9] pt-[3px] pb-[4px] leading-[18px] font-bold tracking-[0.02em] mt-[13px] text-center'>Rs 120,000</h2>
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <h1 className='text-[#505056] text-[16px] leading-[19.2px] font-bold tracking-[0.02em] max-w-[255px] mb-[8px]'>Paradise Apartments</h1>
                         <p className='text-[#505056] text-[13px] leading-[13.2px] font-normal'><span className='text-[#11AFD1]'>4BHK</span> - Kathmandu - Unfurnished </p>
                         <div className='flex items-center mt-[8px] gap-[8px]'>
@@ -245,9 +246,9 @@ const index = (props: Props) => {
                             <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>Nepal Awash</p>
                         </div>
                         <div className='flex items-center gap-[10px] mt-[32px]'>
-                            <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
-                            <Link href="/singleproductview">
-                                <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
+                            <Link href="/realstate/singlepropertyview" className='flex-1'>
+                                <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.75051 8.52832L9.78383 7.49459C9.923 7.35708 10.0991 7.26296 10.2907 7.22363C10.4823 7.18431 10.6812 7.20149 10.8633 7.27307L12.1226 7.77609C12.3066 7.8508 12.4643 7.97831 12.576 8.14256C12.6876 8.30681 12.7482 8.50045 12.75 8.69907V11.0065C12.7489 11.1416 12.7205 11.2751 12.6665 11.399C12.6125 11.5228 12.534 11.6345 12.4358 11.7272C12.3375 11.8199 12.2215 11.8917 12.0948 11.9384C11.968 11.985 11.8331 12.0056 11.6982 11.9987C2.87352 11.4495 1.09289 3.97343 0.756143 1.11221C0.740511 0.971699 0.754794 0.829474 0.798052 0.694886C0.84131 0.560298 0.912563 0.436399 1.00712 0.331338C1.10168 0.226277 1.21741 0.142436 1.34668 0.0853313C1.47596 0.0282263 1.61585 -0.00084875 1.75717 1.88606e-05H3.98526C4.18408 0.000607621 4.37819 0.0606895 4.5426 0.172537C4.70702 0.284384 4.83422 0.442881 4.90786 0.627643L5.41068 1.88751C5.48461 2.0689 5.50347 2.26807 5.46491 2.46013C5.42635 2.65218 5.33208 2.82862 5.19387 2.96739L4.16055 4.00112C4.16055 4.00112 4.75563 8.02991 8.75051 8.52832Z" fill="#11AFD1" />
                                 </svg>Call Now</button>
                             </Link>
@@ -261,7 +262,7 @@ const index = (props: Props) => {
                         </div>
                         <h2 className='text-black text-[15px] bg-[#F9F9F9] pt-[3px] pb-[4px] leading-[18px] font-bold tracking-[0.02em] mt-[13px] text-center'>Rs 120,000</h2>
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <h1 className='text-[#505056] text-[16px] leading-[19.2px] font-bold tracking-[0.02em] max-w-[255px] mb-[8px]'>Paradise Apartments</h1>
                         <p className='text-[#505056] text-[13px] leading-[13.2px] font-normal'><span className='text-[#11AFD1]'>4BHK</span> - Kathmandu - Unfurnished </p>
                         <div className='flex items-center mt-[8px] gap-[8px]'>
@@ -269,9 +270,9 @@ const index = (props: Props) => {
                             <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>Nepal Awash</p>
                         </div>
                         <div className='flex items-center gap-[10px] mt-[32px]'>
-                            <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
-                            <Link href="/singleproductview">
-                                <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
+                            <Link href="/realstate/singlepropertyview" className='flex-1'>
+                                <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.75051 8.52832L9.78383 7.49459C9.923 7.35708 10.0991 7.26296 10.2907 7.22363C10.4823 7.18431 10.6812 7.20149 10.8633 7.27307L12.1226 7.77609C12.3066 7.8508 12.4643 7.97831 12.576 8.14256C12.6876 8.30681 12.7482 8.50045 12.75 8.69907V11.0065C12.7489 11.1416 12.7205 11.2751 12.6665 11.399C12.6125 11.5228 12.534 11.6345 12.4358 11.7272C12.3375 11.8199 12.2215 11.8917 12.0948 11.9384C11.968 11.985 11.8331 12.0056 11.6982 11.9987C2.87352 11.4495 1.09289 3.97343 0.756143 1.11221C0.740511 0.971699 0.754794 0.829474 0.798052 0.694886C0.84131 0.560298 0.912563 0.436399 1.00712 0.331338C1.10168 0.226277 1.21741 0.142436 1.34668 0.0853313C1.47596 0.0282263 1.61585 -0.00084875 1.75717 1.88606e-05H3.98526C4.18408 0.000607621 4.37819 0.0606895 4.5426 0.172537C4.70702 0.284384 4.83422 0.442881 4.90786 0.627643L5.41068 1.88751C5.48461 2.0689 5.50347 2.26807 5.46491 2.46013C5.42635 2.65218 5.33208 2.82862 5.19387 2.96739L4.16055 4.00112C4.16055 4.00112 4.75563 8.02991 8.75051 8.52832Z" fill="#11AFD1" />
                                 </svg>Call Now</button>
                             </Link>
@@ -285,7 +286,7 @@ const index = (props: Props) => {
                         </div>
                         <h2 className='text-black text-[15px] bg-[#F9F9F9] pt-[3px] pb-[4px] leading-[18px] font-bold tracking-[0.02em] mt-[13px] text-center'>Rs 120,000</h2>
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <h1 className='text-[#505056] text-[16px] leading-[19.2px] font-bold tracking-[0.02em] max-w-[255px] mb-[8px]'>Paradise Apartments</h1>
                         <p className='text-[#505056] text-[13px] leading-[13.2px] font-normal'><span className='text-[#11AFD1]'>4BHK</span> - Kathmandu - Unfurnished </p>
                         <div className='flex items-center mt-[8px] gap-[8px]'>
@@ -293,9 +294,9 @@ const index = (props: Props) => {
                             <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>Nepal Awash</p>
                         </div>
                         <div className='flex items-center gap-[10px] mt-[32px]'>
-                            <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
-                            <Link href="/singleproductview">
-                                <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
+                            <Link href="/realstate/singlepropertyview" className='flex-1'>
+                                <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.75051 8.52832L9.78383 7.49459C9.923 7.35708 10.0991 7.26296 10.2907 7.22363C10.4823 7.18431 10.6812 7.20149 10.8633 7.27307L12.1226 7.77609C12.3066 7.8508 12.4643 7.97831 12.576 8.14256C12.6876 8.30681 12.7482 8.50045 12.75 8.69907V11.0065C12.7489 11.1416 12.7205 11.2751 12.6665 11.399C12.6125 11.5228 12.534 11.6345 12.4358 11.7272C12.3375 11.8199 12.2215 11.8917 12.0948 11.9384C11.968 11.985 11.8331 12.0056 11.6982 11.9987C2.87352 11.4495 1.09289 3.97343 0.756143 1.11221C0.740511 0.971699 0.754794 0.829474 0.798052 0.694886C0.84131 0.560298 0.912563 0.436399 1.00712 0.331338C1.10168 0.226277 1.21741 0.142436 1.34668 0.0853313C1.47596 0.0282263 1.61585 -0.00084875 1.75717 1.88606e-05H3.98526C4.18408 0.000607621 4.37819 0.0606895 4.5426 0.172537C4.70702 0.284384 4.83422 0.442881 4.90786 0.627643L5.41068 1.88751C5.48461 2.0689 5.50347 2.26807 5.46491 2.46013C5.42635 2.65218 5.33208 2.82862 5.19387 2.96739L4.16055 4.00112C4.16055 4.00112 4.75563 8.02991 8.75051 8.52832Z" fill="#11AFD1" />
                                 </svg>Call Now</button>
                             </Link>
@@ -309,17 +310,17 @@ const index = (props: Props) => {
                         </div>
                         <h2 className='text-black text-[15px] bg-[#F9F9F9] pt-[3px] pb-[4px] leading-[18px] font-bold tracking-[0.02em] mt-[13px] text-center'>Rs 120,000</h2>
                     </div>
-                    <div>
+                    <div className='w-full'>
                         <h1 className='text-[#505056] text-[16px] leading-[19.2px] font-bold tracking-[0.02em] max-w-[255px] mb-[8px]'>Paradise Apartments</h1>
                         <p className='text-[#505056] text-[13px] leading-[13.2px] font-normal'><span className='text-[#11AFD1]'>4BHK</span> - Kathmandu - Unfurnished </p>
                         <div className='flex items-center mt-[8px] gap-[8px]'>
                             <img src="/../realstate/mblview/nepalawash.png" alt="" />
                             <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>Nepal Awash</p>
                         </div>
-                        <div className='flex items-center gap-[10px] mt-[32px]'>
-                            <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
-                            <Link href="/singleproductview">
-                                <button className='w-[122.5px] h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className='flex items-center gap-[10px] mt-[32px]' >
+                            <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center justify-center text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#D9D9D9]'>Chat</button>
+                            <Link href="/realstate/singlepropertyview" className='flex-1'>
+                                <button className='flex-1 w-full h-[26px] rounded-[2px] flex items-center gap-[10px] justify-center text-[#11AFD1] text-[12px] leading-[14.4px] font-normal tracking-[0.02em] border border-[#11AFD1]'><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.75051 8.52832L9.78383 7.49459C9.923 7.35708 10.0991 7.26296 10.2907 7.22363C10.4823 7.18431 10.6812 7.20149 10.8633 7.27307L12.1226 7.77609C12.3066 7.8508 12.4643 7.97831 12.576 8.14256C12.6876 8.30681 12.7482 8.50045 12.75 8.69907V11.0065C12.7489 11.1416 12.7205 11.2751 12.6665 11.399C12.6125 11.5228 12.534 11.6345 12.4358 11.7272C12.3375 11.8199 12.2215 11.8917 12.0948 11.9384C11.968 11.985 11.8331 12.0056 11.6982 11.9987C2.87352 11.4495 1.09289 3.97343 0.756143 1.11221C0.740511 0.971699 0.754794 0.829474 0.798052 0.694886C0.84131 0.560298 0.912563 0.436399 1.00712 0.331338C1.10168 0.226277 1.21741 0.142436 1.34668 0.0853313C1.47596 0.0282263 1.61585 -0.00084875 1.75717 1.88606e-05H3.98526C4.18408 0.000607621 4.37819 0.0606895 4.5426 0.172537C4.70702 0.284384 4.83422 0.442881 4.90786 0.627643L5.41068 1.88751C5.48461 2.0689 5.50347 2.26807 5.46491 2.46013C5.42635 2.65218 5.33208 2.82862 5.19387 2.96739L4.16055 4.00112C4.16055 4.00112 4.75563 8.02991 8.75051 8.52832Z" fill="#11AFD1" />
                                 </svg>Call Now</button>
                             </Link>

@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Link from 'next/link';
-import { Rate } from 'antd';
 
 type Props = {}
 
@@ -85,55 +84,51 @@ const index = (props: Props) => {
         // prevArrow: <SamplePrevArrow />
     };
     return (
-        <div className='pb-[80px]'>
-            <div className='flex items-center gap-[139px] py-[16px] pl-[19px]'>
-                <Link href="/realstate/search">
+        <div className='pb-[80px] md:hidden'>
+            <div className='flex items-center gap-[139px] py-[16px] pl-[19px] border-[#D9D9D9] border-b-[1px]'>
+                <Link href="/productsearch">
                     <svg className='cursor-pointer' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.17978 13.7235L0.247191 7.63991C0.157303 7.54773 0.093483 7.44788 0.0557302 7.34034C0.0185766 7.2328 0 7.11758 0 6.99468C0 6.87178 0.0185766 6.75656 0.0557302 6.64902C0.093483 6.54149 0.157303 6.44163 0.247191 6.34946L6.17978 0.26589C6.34457 0.0969018 6.55041 0.00841395 6.7973 0.000425426C7.04479 -0.00694859 7.25843 0.0815393 7.4382 0.26589C7.61798 0.434878 7.71176 0.645959 7.71955 0.899134C7.72674 1.15292 7.64045 1.37199 7.46067 1.55634L3.05618 6.07293H13.1011C13.3558 6.07293 13.5694 6.16111 13.742 6.33747C13.914 6.51445 14 6.73352 14 6.99468C14 7.25585 13.914 7.47461 13.742 7.65097C13.5694 7.82795 13.3558 7.91643 13.1011 7.91643H3.05618L7.46067 12.433C7.62547 12.602 7.71176 12.8171 7.71955 13.0782C7.72674 13.3394 7.64045 13.5545 7.46067 13.7235C7.29588 13.9078 7.08614 14 6.83146 14C6.57678 14 6.35955 13.9078 6.17978 13.7235Z" fill="#2D2D2D" />
                     </svg>
                 </Link>
                 <h2 className='text-[#2D2D2D] text-[15px] leading-[18px] font-medium '>Details</h2>
             </div>
-            <div>
-                <img src="/../realstate/mblview/detail1.png" alt="" />
-            </div>
-            <div className='flex items-center justify-between px-[12px] pt-[15px]'>
-                <div className='bg-[#11AFD1] h-[16px] w-[68px] rounded-[10px] flex items-center justify-center'>
-                    <p className='text-white text-[10px] leading-[12px] font-normal tracking-[0.02em]'>Rental</p>
-                </div>
-                <div className='flex items-center gap-[5px]'>
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.995 0C2.235 0 0 2.24 0 5C0 7.76 2.235 10 4.995 10C7.76 10 10 7.76 10 5C10 2.24 7.76 0 4.995 0ZM5 9C2.79 9 1 7.21 1 5C1 2.79 2.79 1 5 1C7.21 1 9 2.79 9 5C9 7.21 7.21 9 5 9ZM5.25 2.5H4.5V5.5L7.125 7.075L7.5 6.46L5.25 5.125V2.5Z" fill="#505056" />
-                    </svg>
-                    <p className='text-[#505056] text-[11px] leading-[13.2px] font-normal tracking-[0.02em]'>Posted on : 2023/01/02</p>
-                </div>
-            </div>
-            <div className='px-[12px] mt-[10px]'>
-                <h1 className='text-black text-[17px] leading-[20.4px] font-bold tracking-[0.02em] mb-[8px]'>Shuburb Houses NSW, Australia</h1>
-                <div className='flex items-center gap-[6px]'>
-                    <svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5.6051C4.80937 5.6051 5.07431 5.49524 5.29481 5.27552C5.51494 5.05617 5.625 4.79236 5.625 4.48408C5.625 4.1758 5.51494 3.9118 5.29481 3.69208C5.07431 3.47273 4.80937 3.36306 4.5 3.36306C4.19063 3.36306 3.92588 3.47273 3.70575 3.69208C3.48525 3.9118 3.375 4.1758 3.375 4.48408C3.375 4.79236 3.48525 5.05617 3.70575 5.27552C3.92588 5.49524 4.19063 5.6051 4.5 5.6051ZM4.5 9.72484C5.64375 8.67856 6.49219 7.72793 7.04531 6.87297C7.59844 6.01838 7.875 5.25945 7.875 4.59618C7.875 3.57792 7.54912 2.74407 6.89737 2.09462C6.246 1.44555 5.44688 1.12102 4.5 1.12102C3.55313 1.12102 2.75381 1.44555 2.10206 2.09462C1.45069 2.74407 1.125 3.57792 1.125 4.59618C1.125 5.25945 1.40156 6.01838 1.95469 6.87297C2.50781 7.72793 3.35625 8.67856 4.5 9.72484ZM4.5 11C4.425 11 4.35 10.986 4.275 10.958C4.2 10.9299 4.13438 10.8926 4.07812 10.8459C2.70937 9.64076 1.6875 8.52217 1.0125 7.49009C0.3375 6.45763 0 5.49299 0 4.59618C0 3.1949 0.452438 2.07856 1.35731 1.24713C2.26181 0.415711 3.30938 0 4.5 0C5.69062 0 6.73819 0.415711 7.64269 1.24713C8.54756 2.07856 9 3.1949 9 4.59618C9 5.49299 8.6625 6.45763 7.9875 7.49009C7.3125 8.52217 6.29063 9.64076 4.92188 10.8459C4.86562 10.8926 4.8 10.9299 4.725 10.958C4.65 10.986 4.575 11 4.5 11Z" fill="#505056" />
-                    </svg>
-                    <p className='text-[#505056] text-[11px] leading-[13.2px] font-normal tracking-[0.02em]'>Kathmandu, Nepal</p>
-                </div>
-                <Rate />
-                <div className='mt-[15px]'>
-                    <h1 className='text-[16px] text-black leading-[19.2px] font-medium tracking-[0.01em]'><span className='text-[#F65128] '>$150 </span>/m</h1>
-                </div>
-            </div>
-            {/* <div className='bg-[#F9F9F9] px-[12px] pt-[7px] pb-[9.5px] mt-[16px]'>
-                <h2 className='text-[#505056] text-[10px] leading-[12px] font-bold tracking-[0.02em] mb-[9.5px]'>Seller Details</h2>
-                <div className='flex items-center justify-between'>
-                    <div className='flex items-center gap-[6px]'>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 8.00222C15.0008 6.75411 14.6899 5.52554 14.0955 4.42796C13.501 3.33037 12.6419 2.3985 11.596 1.71686C10.5501 1.03522 9.35054 0.625382 8.10608 0.524522C6.86162 0.423662 5.61165 0.634969 4.46957 1.13928C3.32748 1.64359 2.32941 2.42494 1.56588 3.41247C0.80235 4.39999 0.29752 5.56245 0.0971813 6.79439C-0.103158 8.02633 0.00733326 9.28877 0.418632 10.4672C0.829931 11.6457 1.52902 12.7028 2.4525 13.5428C2.47147 13.5664 2.49429 13.5867 2.52 13.6028C3.89227 14.8248 5.66596 15.5 7.50375 15.5C9.34154 15.5 11.1152 14.8248 12.4875 13.6028L12.5475 13.5428C13.3209 12.8419 13.9387 11.9866 14.3611 11.0323C14.7835 10.078 15.0012 9.04578 15 8.00222ZM0.6 8.00222C0.599909 6.86853 0.879352 5.7523 1.4136 4.75229C1.94785 3.75229 2.72044 2.89933 3.663 2.2689C4.60556 1.63847 5.68903 1.25001 6.81755 1.13788C7.94606 1.02575 9.08483 1.19342 10.1331 1.62604C11.1813 2.05866 12.1068 2.74291 12.8275 3.61822C13.5482 4.49354 14.042 5.53294 14.2651 6.64447C14.4883 7.75599 14.4339 8.90536 14.1068 9.99088C13.7798 11.0764 13.1901 12.0646 12.39 12.868C11.6452 11.6208 10.451 10.7059 9.0525 10.3114C9.70195 9.96529 10.217 9.41206 10.5158 8.73968C10.8146 8.0673 10.88 7.31436 10.7015 6.60058C10.5231 5.8868 10.1111 5.25313 9.53096 4.80033C8.95086 4.34752 8.23599 4.10157 7.5 4.10157C6.76401 4.10157 6.04914 4.34752 5.46904 4.80033C4.88894 5.25313 4.47692 5.8868 4.29847 6.60058C4.12002 7.31436 4.18539 8.0673 4.48418 8.73968C4.78297 9.41206 5.29804 9.96529 5.9475 10.3114C4.54903 10.7059 3.35477 11.6208 2.61 12.868C1.32353 11.5751 0.600962 9.82585 0.6 8.00222ZM7.5 10.1015C6.96599 10.1015 6.44397 9.9432 5.99996 9.64662C5.55595 9.35004 5.20988 8.9285 5.00552 8.43531C4.80117 7.94212 4.7477 7.39943 4.85188 6.87587C4.95606 6.3523 5.21321 5.87137 5.59081 5.4939C5.96841 5.11643 6.4495 4.85937 6.97325 4.75522C7.497 4.65108 8.03988 4.70453 8.53324 4.90882C9.0266 5.1131 9.44829 5.45905 9.74497 5.90291C10.0416 6.34677 10.2 6.8686 10.2 7.40243C10.2 8.11826 9.91553 8.80478 9.40919 9.31095C8.90284 9.81713 8.21608 10.1015 7.5 10.1015ZM3.0675 13.2804C3.51295 12.4979 4.15773 11.8473 4.93628 11.3948C5.71483 10.9422 6.59938 10.7038 7.5 10.7038C8.40061 10.7038 9.28517 10.9422 10.0637 11.3948C10.8423 11.8473 11.487 12.4979 11.9325 13.2804C10.6922 14.3255 9.12218 14.8987 7.5 14.8987C5.87781 14.8987 4.30784 14.3255 3.0675 13.2804Z" fill="black" />
-                        </svg>
-                        <p className='text-[#505056] text-[12px] leading-[14.4px] font-normal tracking-[0.02em]'>    Adam Smith</p>
+            <div className='px-[12px] pt-[10px]'>
+                <div className='flex items-center gap-[11px]'>
+                    <div>
+                        <img src="/../jobportal/company1.png" alt="" />
                     </div>
-                    <img src="/./assets/mblview/verified.png" className='cursor-pointer' alt="" />
+                    <div>
+                        <p className='text-[#2D2D2D] text-[14px] leading-[21px] font-normal font-poppins mt-[3px]'>Atlassian Technologies</p>
+                        <div className='flex items-center gap-[9px]  mt-[3px]'>
+                            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.5 6.875C4.74375 6.875 4.125 6.25625 4.125 5.5C4.125 4.74375 4.74375 4.125 5.5 4.125C6.25625 4.125 6.875 4.74375 6.875 5.5C6.875 6.25625 6.25625 6.875 5.5 6.875ZM9.625 5.6375C9.625 3.14187 7.80312 1.375 5.5 1.375C3.19688 1.375 1.375 3.14187 1.375 5.6375C1.375 7.24625 2.71562 9.3775 5.5 11.9213C8.28438 9.3775 9.625 7.24625 9.625 5.6375ZM5.5 0C8.3875 0 11 2.21375 11 5.6375C11 7.92 9.16438 10.6219 5.5 13.75C1.83563 10.6219 0 7.92 0 5.6375C0 2.21375 2.6125 0 5.5 0Z" fill="#24263F" />
+                            </svg>
+                            <p className='text-[#0E1133] text-[12px] leading-[18px] font-light font-poppins'>NSW Australia</p>
+                        </div>
+                    </div>
                 </div>
+                <h1 className='text-black text-[18px] leading-[27px] font-medium font-poppins mt-[25.37px]'>System Designer Team Lead</h1>
+                <div className='flex items-center justify-between  pt-[15px]'>
+                    <div className='flex items-center gap-[8px]'>
+                        <div className='bg-[#11AFD1] h-[16px] w-[68px] rounded-[10px] flex items-center justify-center'>
+                            <p className='text-white text-[10px] leading-[12px] font-normal tracking-[0.02em]'>Part-time</p>
+                        </div>
+                        <div className='bg-[#11AFD1] h-[16px] w-[68px] rounded-[10px] flex items-center justify-center'>
+                            <p className='text-white text-[10px] leading-[12px] font-normal tracking-[0.02em]'>Contract</p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-[5px]'>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.995 0C2.235 0 0 2.24 0 5C0 7.76 2.235 10 4.995 10C7.76 10 10 7.76 10 5C10 2.24 7.76 0 4.995 0ZM5 9C2.79 9 1 7.21 1 5C1 2.79 2.79 1 5 1C7.21 1 9 2.79 9 5C9 7.21 7.21 9 5 9ZM5.25 2.5H4.5V5.5L7.125 7.075L7.5 6.46L5.25 5.125V2.5Z" fill="#505056" />
+                        </svg>
+                        <p className='text-[#505056] text-[11px] leading-[13.2px] font-normal tracking-[0.02em]'>Posted on : 2023/01/02</p>
+                    </div>
+                </div>
+            </div>
 
-            </div> */}
+
+
             <div className='flex items-center justify-between px-[12px] mt-[28px]'>
                 <div className='flex items-center gap-[14px]'>
                     <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,116 +149,71 @@ const index = (props: Props) => {
                     <p className='text-[#0084A0] text-[14px] leading-[16.8px] font-normal tracking-[0.02em]'>Call Now</p>
                 </div>
             </div>
-            <div className='mt-[29px] pl-[12px]'>
-                <h2 className='text-black text-[16px] leading-[19.2px] font-medium tracking-[0.01em] mb-[14px]'>Photos</h2>
-                <Slider {...settings} className=" holiday">
-                    <div className='cursor-pointer relative'>
-                        <div className=' transform hover:scale-[105%] transition-all duration-200 ease-in-out bg-[#F9F9F9]  border border-[#EDEDED]   flex items-center items-center justify-center flex-col w-[103px] h-[74px] md:w-[228px] md:h-[228px]  2xl:w-[93%] '>
-                            <img src="/../realstate/mblview/photo1.png" alt="" className='w-full h-[100%] object-cover  ' />
-                        </div>
 
-                    </div>
-                    <div className='cursor-pointer relative'>
-                        <div className=' transform hover:scale-[105%] transition-all duration-200 ease-in-out bg-[#F9F9F9]  border border-[#EDEDED]   flex items-center justify-center flex-col w-[103px] h-[74px] md:w-[228px] md:h-[228px]  2xl:w-[93%] '>
-                            <img src="/../realstate/mblview/photo2.png" alt="" className='w-full h-[100%] object-cover  ' />
-                        </div>
-
-                    </div>
-                    <div className='cursor-pointer relative'>
-                        <div className=' transform hover:scale-[105%] transition-all duration-200 ease-in-out bg-[#F9F9F9]  border border-[#EDEDED]   flex items-center justify-center flex-col w-[103px] h-[74px] md:w-[228px] md:h-[228px]  2xl:w-[93%] '>
-                            <img src="/../realstate/mblview/photo3.png" alt="" className='w-full h-[100%] object-cover  ' />
-                        </div>
-
-                    </div>
-
-                    <div className='cursor-pointer relative'>
-                        <div className=' transform hover:scale-[105%] transition-all duration-200 ease-in-out bg-[#F9F9F9]  border border-[#EDEDED]   flex items-center justify-center flex-col w-[103px] h-[74px] md:w-[228px] md:h-[228px]  2xl:w-[93%] '>
-                            <img src="/../realstate/mblview/photo4.png" alt="" className='w-full h-[100%] object-cover  ' />
-                        </div>
-
-                    </div>
-                    <div className='cursor-pointer relative'>
-                        <div className=' transform hover:scale-[105%] transition-all duration-200 ease-in-out bg-[#F9F9F9]  border border-[#EDEDED]   flex items-center justify-center flex-col w-[103px] h-[74px] md:w-[228px] md:h-[228px]  2xl:w-[93%] '>
-                            <img src="/../assets/mblview/photo3.png" alt="" className='w-full h-[100%] object-cover  ' />
-                        </div>
-
-                    </div>
-
-
-                </Slider>
-            </div>
-            <div className='bg-[#fff] pl-[12px]  mt-[19px] pr-[18px] '>
-                <h2 className='text-[#000000] text-[16px] leading-[19.2px] font-medium tracing-[0.01em]'>Property Details</h2>
-                <p className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em] max-w-[366px] text-left mt-[14px]' >xercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean vinegar stumptown yr pop-up artisan heel this ladylike design slingback strap mid kitten heel this ladylike design.
-                </p>
-
-
-            </div>
-            <div className='bg-[#fff] pl-[12px]  mt-[19px] pr-[18px] '>
-                <h2 className='text-[#000000] text-[16px] leading-[19.2px] font-medium tracing-[0.01em]'>Facilities</h2>
-
-                <div className='grid grid-cols-3 mt-[14px] gap-y-[20.41px]'>
-                    <div className='flex items-center gap-[8.89px]'><svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5.6051C4.80937 5.6051 5.07431 5.49524 5.29481 5.27552C5.51494 5.05617 5.625 4.79236 5.625 4.48408C5.625 4.1758 5.51494 3.9118 5.29481 3.69208C5.07431 3.47273 4.80937 3.36306 4.5 3.36306C4.19063 3.36306 3.92588 3.47273 3.70575 3.69208C3.48525 3.9118 3.375 4.1758 3.375 4.48408C3.375 4.79236 3.48525 5.05617 3.70575 5.27552C3.92588 5.49524 4.19063 5.6051 4.5 5.6051ZM4.5 9.72484C5.64375 8.67856 6.49219 7.72793 7.04531 6.87297C7.59844 6.01838 7.875 5.25945 7.875 4.59618C7.875 3.57792 7.54912 2.74407 6.89737 2.09462C6.246 1.44555 5.44688 1.12102 4.5 1.12102C3.55313 1.12102 2.75381 1.44555 2.10206 2.09462C1.45069 2.74407 1.125 3.57792 1.125 4.59618C1.125 5.25945 1.40156 6.01838 1.95469 6.87297C2.50781 7.72793 3.35625 8.67856 4.5 9.72484ZM4.5 11C4.425 11 4.35 10.986 4.275 10.958C4.2 10.9299 4.13438 10.8926 4.07812 10.8459C2.70937 9.64076 1.6875 8.52217 1.0125 7.49009C0.3375 6.45763 0 5.49299 0 4.59618C0 3.1949 0.452438 2.07856 1.35731 1.24713C2.26181 0.415711 3.30938 0 4.5 0C5.69062 0 6.73819 0.415711 7.64269 1.24713C8.54756 2.07856 9 3.1949 9 4.59618C9 5.49299 8.6625 6.45763 7.9875 7.49009C7.3125 8.52217 6.29063 9.64076 4.92188 10.8459C4.86562 10.8926 4.8 10.9299 4.725 10.958C4.65 10.986 4.575 11 4.5 11Z" fill="#505056" />
-                    </svg>
-                        <p className='text-[#333333] text-[11.48px] leading-[17.22px] font-light font-poppins tracking-[0.02em]'>lorem ips</p>
-                    </div>
-                    <div className='flex items-center gap-[8.89px]'><svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5.6051C4.80937 5.6051 5.07431 5.49524 5.29481 5.27552C5.51494 5.05617 5.625 4.79236 5.625 4.48408C5.625 4.1758 5.51494 3.9118 5.29481 3.69208C5.07431 3.47273 4.80937 3.36306 4.5 3.36306C4.19063 3.36306 3.92588 3.47273 3.70575 3.69208C3.48525 3.9118 3.375 4.1758 3.375 4.48408C3.375 4.79236 3.48525 5.05617 3.70575 5.27552C3.92588 5.49524 4.19063 5.6051 4.5 5.6051ZM4.5 9.72484C5.64375 8.67856 6.49219 7.72793 7.04531 6.87297C7.59844 6.01838 7.875 5.25945 7.875 4.59618C7.875 3.57792 7.54912 2.74407 6.89737 2.09462C6.246 1.44555 5.44688 1.12102 4.5 1.12102C3.55313 1.12102 2.75381 1.44555 2.10206 2.09462C1.45069 2.74407 1.125 3.57792 1.125 4.59618C1.125 5.25945 1.40156 6.01838 1.95469 6.87297C2.50781 7.72793 3.35625 8.67856 4.5 9.72484ZM4.5 11C4.425 11 4.35 10.986 4.275 10.958C4.2 10.9299 4.13438 10.8926 4.07812 10.8459C2.70937 9.64076 1.6875 8.52217 1.0125 7.49009C0.3375 6.45763 0 5.49299 0 4.59618C0 3.1949 0.452438 2.07856 1.35731 1.24713C2.26181 0.415711 3.30938 0 4.5 0C5.69062 0 6.73819 0.415711 7.64269 1.24713C8.54756 2.07856 9 3.1949 9 4.59618C9 5.49299 8.6625 6.45763 7.9875 7.49009C7.3125 8.52217 6.29063 9.64076 4.92188 10.8459C4.86562 10.8926 4.8 10.9299 4.725 10.958C4.65 10.986 4.575 11 4.5 11Z" fill="#505056" />
-                    </svg>
-                        <p className='text-[#333333] text-[11.48px] leading-[17.22px] font-light font-poppins tracking-[0.02em]'>lorem ips</p>
-                    </div>
-                    <div className='flex items-center gap-[8.89px]'><svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5.6051C4.80937 5.6051 5.07431 5.49524 5.29481 5.27552C5.51494 5.05617 5.625 4.79236 5.625 4.48408C5.625 4.1758 5.51494 3.9118 5.29481 3.69208C5.07431 3.47273 4.80937 3.36306 4.5 3.36306C4.19063 3.36306 3.92588 3.47273 3.70575 3.69208C3.48525 3.9118 3.375 4.1758 3.375 4.48408C3.375 4.79236 3.48525 5.05617 3.70575 5.27552C3.92588 5.49524 4.19063 5.6051 4.5 5.6051ZM4.5 9.72484C5.64375 8.67856 6.49219 7.72793 7.04531 6.87297C7.59844 6.01838 7.875 5.25945 7.875 4.59618C7.875 3.57792 7.54912 2.74407 6.89737 2.09462C6.246 1.44555 5.44688 1.12102 4.5 1.12102C3.55313 1.12102 2.75381 1.44555 2.10206 2.09462C1.45069 2.74407 1.125 3.57792 1.125 4.59618C1.125 5.25945 1.40156 6.01838 1.95469 6.87297C2.50781 7.72793 3.35625 8.67856 4.5 9.72484ZM4.5 11C4.425 11 4.35 10.986 4.275 10.958C4.2 10.9299 4.13438 10.8926 4.07812 10.8459C2.70937 9.64076 1.6875 8.52217 1.0125 7.49009C0.3375 6.45763 0 5.49299 0 4.59618C0 3.1949 0.452438 2.07856 1.35731 1.24713C2.26181 0.415711 3.30938 0 4.5 0C5.69062 0 6.73819 0.415711 7.64269 1.24713C8.54756 2.07856 9 3.1949 9 4.59618C9 5.49299 8.6625 6.45763 7.9875 7.49009C7.3125 8.52217 6.29063 9.64076 4.92188 10.8459C4.86562 10.8926 4.8 10.9299 4.725 10.958C4.65 10.986 4.575 11 4.5 11Z" fill="#505056" />
-                    </svg>
-                        <p className='text-[#333333] text-[11.48px] leading-[17.22px] font-light font-poppins tracking-[0.02em]'>lorem ips</p>
-                    </div>
-                    <div className='flex items-center gap-[8.89px]'><svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5.6051C4.80937 5.6051 5.07431 5.49524 5.29481 5.27552C5.51494 5.05617 5.625 4.79236 5.625 4.48408C5.625 4.1758 5.51494 3.9118 5.29481 3.69208C5.07431 3.47273 4.80937 3.36306 4.5 3.36306C4.19063 3.36306 3.92588 3.47273 3.70575 3.69208C3.48525 3.9118 3.375 4.1758 3.375 4.48408C3.375 4.79236 3.48525 5.05617 3.70575 5.27552C3.92588 5.49524 4.19063 5.6051 4.5 5.6051ZM4.5 9.72484C5.64375 8.67856 6.49219 7.72793 7.04531 6.87297C7.59844 6.01838 7.875 5.25945 7.875 4.59618C7.875 3.57792 7.54912 2.74407 6.89737 2.09462C6.246 1.44555 5.44688 1.12102 4.5 1.12102C3.55313 1.12102 2.75381 1.44555 2.10206 2.09462C1.45069 2.74407 1.125 3.57792 1.125 4.59618C1.125 5.25945 1.40156 6.01838 1.95469 6.87297C2.50781 7.72793 3.35625 8.67856 4.5 9.72484ZM4.5 11C4.425 11 4.35 10.986 4.275 10.958C4.2 10.9299 4.13438 10.8926 4.07812 10.8459C2.70937 9.64076 1.6875 8.52217 1.0125 7.49009C0.3375 6.45763 0 5.49299 0 4.59618C0 3.1949 0.452438 2.07856 1.35731 1.24713C2.26181 0.415711 3.30938 0 4.5 0C5.69062 0 6.73819 0.415711 7.64269 1.24713C8.54756 2.07856 9 3.1949 9 4.59618C9 5.49299 8.6625 6.45763 7.9875 7.49009C7.3125 8.52217 6.29063 9.64076 4.92188 10.8459C4.86562 10.8926 4.8 10.9299 4.725 10.958C4.65 10.986 4.575 11 4.5 11Z" fill="#505056" />
-                    </svg>
-                        <p className='text-[#333333] text-[11.48px] leading-[17.22px] font-light font-poppins tracking-[0.02em]'>lorem ips</p>
-                    </div>
-                    <div className='flex items-center gap-[8.89px]'><svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5.6051C4.80937 5.6051 5.07431 5.49524 5.29481 5.27552C5.51494 5.05617 5.625 4.79236 5.625 4.48408C5.625 4.1758 5.51494 3.9118 5.29481 3.69208C5.07431 3.47273 4.80937 3.36306 4.5 3.36306C4.19063 3.36306 3.92588 3.47273 3.70575 3.69208C3.48525 3.9118 3.375 4.1758 3.375 4.48408C3.375 4.79236 3.48525 5.05617 3.70575 5.27552C3.92588 5.49524 4.19063 5.6051 4.5 5.6051ZM4.5 9.72484C5.64375 8.67856 6.49219 7.72793 7.04531 6.87297C7.59844 6.01838 7.875 5.25945 7.875 4.59618C7.875 3.57792 7.54912 2.74407 6.89737 2.09462C6.246 1.44555 5.44688 1.12102 4.5 1.12102C3.55313 1.12102 2.75381 1.44555 2.10206 2.09462C1.45069 2.74407 1.125 3.57792 1.125 4.59618C1.125 5.25945 1.40156 6.01838 1.95469 6.87297C2.50781 7.72793 3.35625 8.67856 4.5 9.72484ZM4.5 11C4.425 11 4.35 10.986 4.275 10.958C4.2 10.9299 4.13438 10.8926 4.07812 10.8459C2.70937 9.64076 1.6875 8.52217 1.0125 7.49009C0.3375 6.45763 0 5.49299 0 4.59618C0 3.1949 0.452438 2.07856 1.35731 1.24713C2.26181 0.415711 3.30938 0 4.5 0C5.69062 0 6.73819 0.415711 7.64269 1.24713C8.54756 2.07856 9 3.1949 9 4.59618C9 5.49299 8.6625 6.45763 7.9875 7.49009C7.3125 8.52217 6.29063 9.64076 4.92188 10.8459C4.86562 10.8926 4.8 10.9299 4.725 10.958C4.65 10.986 4.575 11 4.5 11Z" fill="#505056" />
-                    </svg>
-                        <p className='text-[#333333] text-[11.48px] leading-[17.22px] font-light font-poppins tracking-[0.02em]'>lorem ips</p>
-                    </div>
-                    <div className='flex items-center gap-[8.89px]'><svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 5.6051C4.80937 5.6051 5.07431 5.49524 5.29481 5.27552C5.51494 5.05617 5.625 4.79236 5.625 4.48408C5.625 4.1758 5.51494 3.9118 5.29481 3.69208C5.07431 3.47273 4.80937 3.36306 4.5 3.36306C4.19063 3.36306 3.92588 3.47273 3.70575 3.69208C3.48525 3.9118 3.375 4.1758 3.375 4.48408C3.375 4.79236 3.48525 5.05617 3.70575 5.27552C3.92588 5.49524 4.19063 5.6051 4.5 5.6051ZM4.5 9.72484C5.64375 8.67856 6.49219 7.72793 7.04531 6.87297C7.59844 6.01838 7.875 5.25945 7.875 4.59618C7.875 3.57792 7.54912 2.74407 6.89737 2.09462C6.246 1.44555 5.44688 1.12102 4.5 1.12102C3.55313 1.12102 2.75381 1.44555 2.10206 2.09462C1.45069 2.74407 1.125 3.57792 1.125 4.59618C1.125 5.25945 1.40156 6.01838 1.95469 6.87297C2.50781 7.72793 3.35625 8.67856 4.5 9.72484ZM4.5 11C4.425 11 4.35 10.986 4.275 10.958C4.2 10.9299 4.13438 10.8926 4.07812 10.8459C2.70937 9.64076 1.6875 8.52217 1.0125 7.49009C0.3375 6.45763 0 5.49299 0 4.59618C0 3.1949 0.452438 2.07856 1.35731 1.24713C2.26181 0.415711 3.30938 0 4.5 0C5.69062 0 6.73819 0.415711 7.64269 1.24713C8.54756 2.07856 9 3.1949 9 4.59618C9 5.49299 8.6625 6.45763 7.9875 7.49009C7.3125 8.52217 6.29063 9.64076 4.92188 10.8459C4.86562 10.8926 4.8 10.9299 4.725 10.958C4.65 10.986 4.575 11 4.5 11Z" fill="#505056" />
-                    </svg>
-                        <p className='text-[#333333] text-[11.48px] leading-[17.22px] font-light font-poppins tracking-[0.02em]'>lorem ips</p>
-                    </div>
-
+            <div className='bg-[#F9F9F9] pt-[9px] pl-[19px] mt-[19px] pr-[18px] pb-[23px]'>
+                <h2 className='text-[#000000] text-[16px] leading-[19.2px] font-medium tracing-[0.01em]'> Details</h2>
+                <div className='flex items-center justify-between mt-[14px]'>
+                    <p className='text-[#817D79] text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Job ID</p>
+                    <p className='text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>DSJ1548326</p>
+                </div>
+                <div className='flex items-center justify-between mt-[14px]'>
+                    <p className='text-[#817D79] text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Job Title</p>
+                    <p className='text-[13px] leading-[15.6px] text-[#F65128] font-normal tracking-[0.01em]'>System Designer</p>
+                </div>
+                <div className='flex items-center justify-between mt-[14px]'>
+                    <p className='text-[#817D79] text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Posted Date</p>
+                    <p className='text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>4 Feb, 2023</p>
+                </div>
+                <div className='flex items-center justify-between mt-[14px]'>
+                    <p className='text-[#817D79] text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Job Location</p>
+                    <p className='text-[13px] leading-[15.6px] text-[#24263F]  font-normal tracking-[0.01em]'>NSW, Australia (Remote)</p>
+                </div>
+                <div className='flex items-center justify-between mt-[14px]'>
+                    <p className='text-[#817D79] text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Salary</p>
+                    <p className='text-[13px] leading-[15.6px] text-[#7D44E7] font-normal tracking-[0.01em]'>$100K-$120K pa</p>
+                </div>
+                <div className='flex items-center justify-between mt-[14px]'>
+                    <p className='text-[#817D79] text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Category</p>
+                    <p className='text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Information Technology</p>
+                </div>
+                <div className='flex items-center justify-between mt-[14px]'>
+                    <p className='text-[#817D79] text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>Experience</p>
+                    <p className='text-[13px] leading-[15.6px] font-normal tracking-[0.01em]'>No Experience</p>
                 </div>
 
-            </div>
-            <div className='px-[12px] mt-[24.65px]'>
-                <h2 className='text-[#24263F] text-[16px] leading-[19.2px] font-medium tracking-[0.01em] mb-[14px]'>Additional Descrioptions</h2>
-                <p className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em] max-w-[366px]'>xercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident </p>
             </div>
             <div className='px-[12px] mt-[14px]'>
-                <h1 className='text-[#000000] text-[16px] leading-[19.2px] font-medium tracing-[0.01em] mb-[14px]'>Property Map</h1>
-                <img src="/../realstate/mblview/map.png" alt="" />
+                <h1 className='text-[#24263F] text-[16px] leading-[19.2px] font-medium tracking-[0.01em]'>Job Description</h1>
+                <p className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em] max-w-[366px] mt-[14px]'>xercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam </p>
 
             </div>
-            <div className='mt-[25.95px] px-[12px] '>
-                <div className='border border-[#EDEDED] rounded-[5px] pb-[23px]'>
-                    <img src="/../realstate/mblview/logoadd1.png" className='w-full' alt="" />
-                    <div className='flex text-center justify-between pt-[13.5px] pl-[21px] pr-[26px]'>
-                        <div className='flex items-start justify-end flex-col'>
-                            <h2 className='text-[#24263F] text-[18px] leading-[27px] font-medium  font-poppins tracking-[0.01em]'>Nepal Real Estate</h2>
-                            <p className='text-[#817D79] text-[13px] leading-[19.2px] font-normal tracking-[0.01em] text-start'>Kathmandu, Nepal</p>
-                        </div>
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5 0C14.8734 0 17.1934 0.703787 19.1668 2.02236C21.1402 3.34094 22.6783 5.21508 23.5865 7.4078C24.4948 9.60051 24.7324 12.0133 24.2694 14.3411C23.8064 16.6689 22.6635 18.807 20.9853 20.4853C19.307 22.1635 17.1689 23.3064 14.8411 23.7694C12.5133 24.2324 10.1005 23.9948 7.9078 23.0865C5.71509 22.1783 3.84094 20.6402 2.52236 18.6668C1.20379 16.6934 0.5 14.3734 0.5 12C0.506218 8.81931 1.7725 5.77068 4.02159 3.52159C6.27068 1.2725 9.31931 0.00621837 12.5 0ZM12.5 22.5882C14.5942 22.5882 16.6413 21.9672 18.3825 20.8038C20.1237 19.6403 21.4809 17.9867 22.2822 16.0519C23.0836 14.1172 23.2933 11.9883 22.8848 9.93434C22.4762 7.88042 21.4678 5.99378 19.987 4.51299C18.5062 3.03219 16.6196 2.02376 14.5657 1.61521C12.5117 1.20666 10.3828 1.41635 8.44806 2.21775C6.51331 3.01914 4.85966 4.37626 3.69621 6.11749C2.53275 7.85872 1.91176 9.90584 1.91176 12C1.91488 14.8072 3.03142 17.4986 5.01642 19.4836C7.00143 21.4686 9.69278 22.5851 12.5 22.5882ZM10.1471 8.29412L14.2647 12L10.1471 15.7059C10.0773 15.7675 10.0203 15.8423 9.97956 15.926C9.93879 16.0097 9.91499 16.1007 9.90952 16.1936C9.90405 16.2866 9.91703 16.3797 9.9477 16.4676C9.97837 16.5555 10.0261 16.6365 10.0882 16.7059C10.1557 16.7792 10.2375 16.8379 10.3286 16.8783C10.4196 16.9188 10.518 16.9402 10.6176 16.9412C10.7908 16.9421 10.9583 16.8793 11.0882 16.7647L15.7941 12.5294C15.8676 12.4622 15.9263 12.3804 15.9664 12.2892C16.0065 12.1981 16.0273 12.0996 16.0273 12C16.0273 11.9004 16.0065 11.8019 15.9664 11.7108C15.9263 11.6196 15.8676 11.5378 15.7941 11.4706L11.0882 7.23529C10.9478 7.11048 10.7636 7.04657 10.5761 7.0576C10.3885 7.06863 10.213 7.15371 10.0882 7.29412C9.96343 7.43452 9.89951 7.61876 9.91054 7.8063C9.92157 7.99383 10.0066 8.16931 10.1471 8.29412Z" fill="#2791D6" />
-                        </svg>
+            <div className='px-[12px] mt-[14px]'>
+                <h1 className='text-[#24263F] text-[16px] leading-[19.2px] font-medium tracking-[0.01em]'>Responsibilites</h1>
+                <p className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em] max-w-[366px] mt-[14px]'>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                <p className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em]'>Curabitur aliquet quam id dui posuere blandit. </p>
+                <ul className='list-disc pl-[25px] mt-[5px]'>
+                    <li className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em]'>Build next-generation web applications with a focus on the client side.</li>
+                    <li className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em]'> Redesign UI’s, implement new UI’s, and pick up Java as necessary.</li>
+                    <li className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em]'>Explore and design dynamic and compelling consumer experiences.</li>
+                    <li className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em]'>Design and build scalable framework for web applications.</li>
+                </ul>
 
-                    </div>
-                    <div className='px-[22px] mt-[51px]'>
-                        <button className='bg-[#11AFD1] h-[52px] w-full flex items-center justify-center rounded-[4px] text-[15px] font-normal text-white leading-[22.5px]'>Contact Agent</button>
-                        <button className=' border border-[#11AFD1] h-[52px] w-full flex items-center justify-center rounded-[4px] text-[15px] font-normal text-[#11AFD1] leading-[22.5px] mt-[18px]'>Enquire</button>
-                    </div>
-                </div>
+            </div>
+            <div className='px-[12px] mt-[14px]'>
+                <h1 className='text-[#24263F] text-[16px] leading-[19.2px] font-medium tracking-[0.01em]'>Qualifications</h1>
+                <p className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em] max-w-[366px] mt-[14px]'>BA/BS degree in a technical field or equivalent practical experience.</p>
+
+                <ul className='list-disc pl-[25px] mt-[5px]'>
+                    <li className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em]'> 2 years of relevant work experience in software development.</li>
+                    <li className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em]'> Programming experience in C, C++ or Java.</li>
+
+                </ul>
+
+            </div>
+            <div className='px-[12px] mt-[14px]'>
+                <h1 className='text-[#24263F] text-[16px] leading-[19.2px] font-medium tracking-[0.01em]'>How To Apply</h1>
+                <p className='text-[#817D79] text-[12px] leading-[19.2px] font-normal tracking-[0.02em] max-w-[366px] mt-[14px] font-poppins'>itation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale</p>
+
             </div>
 
             <div className='mt-[28px] px-[12px]'>
@@ -341,12 +291,6 @@ const index = (props: Props) => {
 
 
                 </Slider>
-            </div>
-            <div className='bg-[#2791D61A] mt-[16px] px-[12px] pt-[16px] pl-[18px] pb-[14px]'>
-                <h1 className='text-[#24263F] text-[16px] leading-[24px] font-normal font-poppins tracking-[0.01em]'>Need More Details About the Project ?</h1>
-                <div className='flex items-center justify-end pr-[16px] mt-[20px]'>
-                    <button className='bg-[#F65128] rounded-[4px] h-[38px] text-white text-[13px] leading-[19.5px] font-normal tracking-[0.01em] font-poppins flex items-center justify-center px-[10px] '>Download Brochure</button>
-                </div>
             </div>
         </div>
     )

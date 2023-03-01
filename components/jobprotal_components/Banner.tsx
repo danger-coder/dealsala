@@ -10,12 +10,16 @@ type Props = {}
 
 const Banner = (props: Props) => {
     return (
-        <div className='relative'>
+        <div className='relative px-[12px] md:px-0'>
             <div className='mt-[14px]'>
-                <img src="/../jobportal/banner.jpg" className='w-full h-[297px] object-cover' alt="" />
+                <img src="/../jobportal/banner.jpg" className='w-full md:h-[297px] h-[144px] object-cover rounded-[5px] md:rounded-none' alt="" />
             </div>
-            <img src="/../jobportal/headphone.png" className='absolute right-0 bottom-[-20px] cursor-pointer' alt="" />
-            <div className='absolute left-[50%] top-[80%] transform translate-x-[-50%] translate-y-[-50%]'>
+            <div className='absolute top-[18px] left-[50%] transform translate-x-[-50%] flex items-center justify-center flex-col'>
+                <h2 className='text-white text-[23.86px] leading-[28.63px] font-semibold text-center max-w-[208px] mb-[17px]'>Hiring & Finding  Job Made easy</h2>
+                <p className='text-white/[0.8]  text-[11.93px] leading-[17.9px] font-normal font-poppins text-center w-[305px]'>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi</p>
+            </div>
+            <img src="/../jobportal/headphone.png" className='absolute right-0 bottom-[-20px] cursor-pointer hidden md:block' alt="" />
+            <div className='absolute left-[50%] top-[80%] transform translate-x-[-50%] translate-y-[-50%] hidden md:block'>
                 <div>
                     <h2 className='text-white text-[32px] leading-[48px] font-semibold text-center'>Hiring & Finding  Job Made easy</h2>
                     <p className='text-white/[0.8] mt-[5px] text-[16px] leading-[24px] font-normal px-[190px] text-center'>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi</p>

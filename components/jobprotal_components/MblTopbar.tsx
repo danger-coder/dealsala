@@ -8,7 +8,7 @@ const handleChange = (value: string) => {
     console.log(`selected ${value}`);
 };
 
-const TopBar = () => {
+const MblTopbar = () => {
     const [open, setOpen] = useState(false);
     const router = useRouter()
     const showDrawer = () => {
@@ -27,7 +27,7 @@ const TopBar = () => {
 
 
     return (
-        <div className=' container mx-auto  pt-[22px] px-[12px] md:px-0'>
+        <div className=' container mx-auto  pt-[22px] px-[12px] md:px-0 md:hidden'>
 
             <div className=' sm:flex flex  items-center justify-between'>
                 <svg className='sm:hidden' width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +122,7 @@ const TopBar = () => {
                     </div>
                 </div>
             </Drawer>
-            <div className=' flex items-center gap-[9px] mt-[7px] sm:hidden w-full '>
+            <div className=' flex items-center gap-[9px] mt-[7px] sm:hidden'>
                 <Select className='mbl_select'
                     defaultValue="Kathmandu"
                     style={{ width: 120, }}
@@ -140,12 +140,12 @@ const TopBar = () => {
                     ]}
                 />
 
-                <div className='border md:hidden border-[#EDEDED] rounded-[2px]  flex items-center justify-between py-[20px] pl-[10.16px] pr-[15px] h-[36px] flex-grow gap-[15px]'>
+                <div className='border md:hidden border-[#EDEDED] rounded-[2px]  flex items-center justify-between py-[20px] pl-[10.16px] pr-[15px] h-[36px] gap-[15px]  w-full'>
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={searchClick}>
                         <path opacity="0.4" d="M5.75957 0C8.93886 0 11.5191 2.58029 11.5191 5.75957C11.5191 8.93886 8.93886 11.5191 5.75957 11.5191C2.58029 11.5191 0 8.93886 0 5.75957C0 2.58029 2.58029 0 5.75957 0ZM5.75957 10.2392C8.23427 10.2392 10.2392 8.23427 10.2392 5.75957C10.2392 3.28424 8.23427 1.27991 5.75957 1.27991C3.28424 1.27991 1.27991 3.28424 1.27991 5.75957C1.27991 8.23427 3.28424 10.2392 5.75957 10.2392ZM11.1896 10.2847L13 12.0945L12.0945 13L10.2847 11.1896L11.1896 10.2847Z" fill="black" />
                     </svg>
 
-                    <input type="text" placeholder='Search products' className='placeholder:text-[#817D79] text-[#817D79] text-[13px] font-normal font-poppins leading-[19.5px] outline-none   w-[85%]' />
+                    <input type="text" placeholder='Search products' className='placeholder:text-[#817D79] text-[#817D79] text-[13px] font-normal font-poppins leading-[19.5px] w-[85%] outline-none ' />
                     <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.2" d="M5 8.8421C4.40476 8.8421 3.89881 8.62719 3.48214 8.19737C3.06548 7.76754 2.85714 7.24561 2.85714 6.63158V2.21053C2.85714 1.59649 3.06548 1.07456 3.48214 0.644737C3.89881 0.214912 4.40476 0 5 0C5.59524 0 6.10119 0.214912 6.51786 0.644737C6.93452 1.07456 7.14286 1.59649 7.14286 2.21053V6.63158C7.14286 7.24561 6.93452 7.76754 6.51786 8.19737C6.10119 8.62719 5.59524 8.8421 5 8.8421ZM4.28571 14V11.7342C3.04762 11.5623 2.02381 10.9912 1.21429 10.0211C0.404762 9.05088 0 7.92105 0 6.63158H1.42857C1.42857 7.65088 1.77691 8.51961 2.47357 9.23779C3.16976 9.95646 4.0119 10.3158 5 10.3158C5.9881 10.3158 6.83048 9.95646 7.52714 9.23779C8.22333 8.51961 8.57143 7.65088 8.57143 6.63158H10C10 7.92105 9.59524 9.05088 8.78571 10.0211C7.97619 10.9912 6.95238 11.5623 5.71429 11.7342V14H4.28571Z" fill="black" />
                     </svg>
@@ -155,4 +155,4 @@ const TopBar = () => {
     )
 }
 
-export default TopBar
+export default MblTopbar
