@@ -16,6 +16,76 @@ import Category from '../../components/newecommercedesign/Category'
 
 type Props = {}
 
+let data = [{
+    name: "text",
+    img: "/../assets/mblview/coat.png"
+},
+{
+    name: "text",
+    img: "/../assets/mblview/lamp.png"
+},
+{
+    name: "text",
+    img: "/../assets/mblview/coat.png"
+},
+{
+    name: "text",
+    img: "/../assets/mblview/coat.png"
+}
+    ,
+{
+    name: "text",
+    img: "/../assets/mblview/coat.png"
+}
+
+]
+
+let data2 = [{
+    name: "text",
+    img: "/../ecommerce/funiture.png"
+},
+{
+    name: "text",
+    img: "/../ecommerce/furniture2.png"
+},
+{
+    name: "text",
+    img: "/../ecommerce/furniture3.png"
+},
+{
+    name: "text",
+    img: "/../ecommerce/furniture4.png"
+}
+    ,
+{
+    name: "text",
+    img: "/../ecommerce/funiture.png"
+}
+
+]
+let data3 = [{
+    name: "text",
+    img: "/../ecommerce/shoe1.png"
+},
+{
+    name: "text",
+    img: "/../ecommerce/shoe2.png"
+},
+{
+    name: "text",
+    img: "/../ecommerce/shoe3.png"
+},
+{
+    name: "text",
+    img: "/../ecommerce/shoe4.png"
+}
+    ,
+{
+    name: "text",
+    img: "/../ecommerce/shoe1.png"
+}
+
+]
 const index = (props: Props) => {
     return (
         <div className='pb-[80px] md:hidden'>
@@ -23,11 +93,11 @@ const index = (props: Props) => {
             <Banners />
             <NewCategories />
             <Category />
-            <ToolDiy />
+            <ToolDiy name='Tools & DIY Crafts' data={data} />
             <FeaturedProducts />
-            <ToolDiy />
-            <ToolDiy />
-            <ToolDiy />
+            <ToolDiy name='Furniture & DIY' data={data2} />
+            <ToolDiy name='Sport Shoes' data={data3} />
+            <ToolDiy name='Title' data={data} />
 
             {/* <Line />
             <Sliders />
