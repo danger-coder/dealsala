@@ -3,8 +3,8 @@ import React from 'react'
 const FooterInfo = () => {
     return (
         <div className='bg-[#F6F8FA]'>
-            <div className='container mx-auto flex pt-[54px] pb-[24px] '>
-                <div className='flex basis-[100%] justify-between '>
+            <div className='container mx-auto md:flex pt-[54px] pb-[24px] hidden'>
+                <div className='flex-col flex md:flex-row basis-[100%] justify-between '>
                     <div>
                         <h2 className='text-[18px] leading-[21.09px] font-semibold mb-[8px]'>COMPANY</h2>
                         <ul className='text-[16px] leading-[18.75px space-y-[4px] font-roboto'>

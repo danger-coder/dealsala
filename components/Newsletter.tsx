@@ -3,8 +3,8 @@ import React from 'react'
 const Newsletter = () => {
     return (
         <div className='newsletter '>
-            <div className='relative'>
-                <div className='container mx-auto pt-[39px] pb-[41px] pl-[60px] '>
+            <div className='relative hidden md:block'>
+                <div className='container mx-auto pt-[39px] pb-[41px] xl:pl-[100px] 2xl:pl-[60px] '>
                     <h2 className='text-[32px] leading-[62.88px] tracking-[-0.02em] text-white font-bold'>Join Our Newsletter And Get</h2>
                     <p className='text-[18px] leading-[35.37px] font-normal text-white'>alerts about new products and services</p>
                     <div className='flex items-center w-[494px] h-[54px] mt-[11px]'>
